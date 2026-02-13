@@ -1,0 +1,515 @@
+[
+  {
+    "term": "Comerciante Individual",
+    "category": "Legal",
+    "description": "Es la forma más sencilla de tener un negocio formal en El Salvador. Vos como persona sos el negocio: no se crea ninguna empresa separada. Todo lo que ganás es tuyo, pero también todas las deudas del negocio las pagás con tus bienes personales (casa, carro, ahorros). Es como manejar sin cinturón: más fácil de subir, pero si chocás, vos llevás todo el golpe.",
+    "examples": [
+      "María abre una tienda de ropa con $5,000 en mercadería. Como comerciante individual, no necesita escritura pública ni capital mínimo. Si la tienda quiebra con deudas de $20,000, sus acreedores pueden cobrarle con sus bienes personales.",
+      "Carlos es electricista y se registra como comerciante individual para poder emitir facturas. Con activos menores a $2,286 solo necesita su NIT y registrarse en la alcaldía."
+    ]
+  },
+  {
+    "term": "Persona Jurídica",
+    "category": "Legal",
+    "description": "Es un 'ente legal' creado por la ley que existe separado de las personas que lo formaron. Pensalo como un personaje ficticio que puede tener propiedades, firmar contratos, tener deudas y demandar o ser demandado, todo independientemente de sus dueños. Las sociedades (como una SAS o una S.A.) son personas jurídicas; un comerciante individual NO lo es.",
+    "examples": [
+      "Cuando Juan constituye una SAS, nace una nueva 'persona' ante la ley. Si la SAS compra un local, el local es de la SAS, no de Juan personalmente.",
+      "La SAS 'Tecnología Creativa SAS' puede abrir cuentas bancarias, firmar contratos con proveedores y ser demandada ante tribunales, todo bajo su propio nombre, no el de sus accionistas."
+    ]
+  },
+  {
+    "term": "Responsabilidad Ilimitada",
+    "category": "Legal",
+    "description": "Significa que si tu negocio no puede pagar sus deudas, los acreedores pueden ir tras tus bienes personales: tu casa, tu carro, tus ahorros. No hay separación entre lo tuyo y lo del negocio. Es el riesgo principal del comerciante individual.",
+    "examples": [
+      "Pedro tiene una ferretería como comerciante individual. Un proveedor le demanda por $50,000 que debe. Como tiene responsabilidad ilimitada, el juez puede embargar la casa personal de Pedro para pagar esa deuda.",
+      "Ana tiene un restaurante informal. Un cliente se intoxica y la demanda por $30,000. Como no tiene persona jurídica separada, Ana responde con todo su patrimonio personal."
+    ]
+  },
+  {
+    "term": "Responsabilidad Limitada",
+    "category": "Legal",
+    "description": "Es la protección que ofrecen las sociedades como la SAS o la EIRL: si el negocio quiebra, solo perdés lo que pusiste como capital. Tus bienes personales (casa, carro, ahorros) quedan protegidos. Es como un escudo legal entre vos y tu empresa.",
+    "examples": [
+      "Roberto creó una SAS con $5,000 de capital. El negocio fracasa y debe $40,000 a proveedores. Roberto solo pierde sus $5,000 de capital; nadie puede tocar su casa ni sus ahorros personales.",
+      "Lucía aportó $1 para crear su SAS. Si la empresa acumula deudas, su responsabilidad máxima es ese dólar (siempre que no haya cometido fraude)."
+    ]
+  },
+  {
+    "term": "EIRL (Empresa Individual de Responsabilidad Limitada)",
+    "category": "Legal",
+    "description": "Es una figura legal que permite a una sola persona crear una empresa con responsabilidad limitada, separando su patrimonio personal del empresarial. Suena bien en teoría, pero en la práctica es muy burocrática: necesita escritura pública, auditor externo, publicación en el Diario Oficial y esperar 30 días por si algún acreedor se opone. Desde que apareció la SAS en 2024, casi nadie la usa.",
+    "examples": [
+      "Jorge quería proteger sus bienes personales pero operar solo. Antes de 2024, la EIRL era su única opción: tuvo que pagar notario, auditor y publicar en dos periódicos. Le costó más de $1,000 y tardó más de un mes.",
+      "Con la misma protección patrimonial, hoy una SAS unipersonal se constituye en línea, con $1 de capital y sin notario. Por eso la EIRL prácticamente ha quedado obsoleta."
+    ]
+  },
+  {
+    "term": "SAS (Sociedad por Acciones Simplificada)",
+    "category": "Legal",
+    "description": "Es el tipo de empresa más moderno en El Salvador, disponible desde febrero de 2024. Permite crear una sociedad con personalidad jurídica propia (separada de vos), responsabilidad limitada, capital desde $1, y todo se hace 100% en línea sin necesidad de notario ni escritura pública. Puede tener uno o más socios (accionistas). Es la opción que más gente está eligiendo: más de 3,800 se crearon en su primer año.",
+    "examples": [
+      "Sofía vende cursos en línea. Constituyó su SAS con $1 de capital en CreaEmpresa.gob.sv, sin ir a ninguna oficina. Ahora tiene una empresa formal que protege su patrimonio personal.",
+      "Dos amigos programadores crearon una SAS: uno aportó $2,000 en efectivo y el otro aportó su trabajo como desarrollador, valorado en $2,000. Cada uno recibió 2,000 acciones."
+    ]
+  },
+  {
+    "term": "Escritura Pública",
+    "category": "Legal",
+    "description": "Es un documento legal preparado y firmado ante un notario que da fe pública de un acto jurídico (como crear una empresa, vender una propiedad o dar un poder). Tiene un costo y requiere ir personalmente. Las sociedades tradicionales (S.A. de C.V.) necesitan escritura pública para constituirse, pero la SAS NO la necesita — se sustituye por un formulario en línea.",
+    "examples": [
+      "Para crear una Sociedad Anónima tradicional, los socios deben ir ante un notario, quien redacta la escritura pública de constitución. Esto puede costar entre $500 y $1,500 en honorarios.",
+      "La SAS eliminó este requisito: en vez de escritura pública, los accionistas llenan un formulario digital en el CNR y firman una declaración jurada de veracidad."
+    ]
+  },
+  {
+    "term": "Declaración Jurada",
+    "category": "Legal",
+    "description": "Es una afirmación escrita donde una persona declara bajo juramento que la información que está dando es verdadera. Si miente, puede enfrentar consecuencias legales (civiles y penales). En el contexto de la SAS, los accionistas firman una declaración jurada de veracidad en el formulario de constitución, haciéndose responsables de la información declarada.",
+    "examples": [
+      "Al constituir su SAS, Mario firma una declaración jurada de que los bienes que aporta (una computadora de $1,000) realmente valen eso. Si miente y dice que vale $10,000, puede ser demandado.",
+      "En la solicitud de matrícula de comercio, el comerciante declara bajo juramento datos como su actividad económica y dirección del establecimiento."
+    ]
+  },
+  {
+    "term": "Levantamiento del Velo Corporativo",
+    "category": "Legal",
+    "description": "Es cuando un juez decide ignorar la separación entre la empresa y sus dueños porque detecta que la empresa se usó para cometer fraude o perjudicar a terceros. Normalmente, la persona jurídica es un 'escudo' que protege a los socios, pero si abusás de ese escudo, el juez lo puede 'levantar' y hacerte pagar personalmente. En la SAS está regulado en el artículo 305-O.",
+    "examples": [
+      "Carlos creó una SAS, sacó préstamos a nombre de la empresa sin intención de pagarlos, y transfirió todo el dinero a su cuenta personal. Un juez 'levanta el velo' y ordena que Carlos pague con sus bienes personales.",
+      "Una SAS con $1 de capital firma contratos millonarios sabiendo que no puede cumplirlos. Los tribunales pueden considerar esto fraude y hacer responsables personalmente a los accionistas."
+    ]
+  },
+  {
+    "term": "Reserva Legal",
+    "category": "Legal",
+    "description": "Es un porcentaje de las ganancias que una empresa debe apartar obligatoriamente cada año como 'colchón de seguridad' para proteger a los acreedores. En las Sociedades Anónimas tradicionales es obligatoria (7% de las utilidades hasta llegar al 20% del capital). En la SAS es opcional (Art. 305-G), lo que da más flexibilidad pero también menos protección.",
+    "examples": [
+      "Una S.A. de C.V. gana $100,000 al año. Debe separar $7,000 como reserva legal antes de repartir dividendos a los socios. Ese dinero no se puede tocar.",
+      "En una SAS, los accionistas pueden decidir no crear reserva legal y repartirse todas las utilidades. Más plata en el bolsillo ahora, pero menos respaldo si vienen tiempos difíciles."
+    ]
+  },
+  {
+    "term": "Formulario de Constitución",
+    "category": "Legal",
+    "description": "Es el documento digital que reemplaza a la escritura pública para crear una SAS. Se llena en línea en CreaEmpresa.gob.sv e incluye toda la información de la sociedad: nombre, capital, accionistas, aportes, administrador, etc. Los firmantes son responsables civil, administrativa y penalmente por la veracidad de lo declarado.",
+    "examples": [
+      "Laura entra a CreaEmpresa.gob.sv, llena el formulario con el nombre de su SAS, declara $1 de capital en efectivo, se nombra administradora única, y envía el formulario. En horas, su empresa está constituida.",
+      "En el formulario se debe especificar qué aporta cada accionista y bajo qué título (efectivo, bienes, trabajo), así como la forma en que se pagará el capital."
+    ]
+  },
+  {
+    "term": "Acciones",
+    "category": "Legal",
+    "description": "Son las 'partes' en que se divide el capital de una sociedad. Cada acción representa una porción de la propiedad de la empresa. En la SAS, cada acción vale $1 (deben ser múltiplos de un dólar). Si la SAS tiene $5,000 de capital, hay 5,000 acciones. El dueño de más acciones tiene más participación y más voto.",
+    "examples": [
+      "Una SAS con capital de $3,000 tiene 3,000 acciones de $1. Si un socio aportó $2,000, tiene 2,000 acciones (66.7% de la empresa).",
+      "En una SAS unipersonal con $1 de capital, hay exactamente 1 acción, y el único accionista es dueño del 100%."
+    ]
+  },
+  {
+    "term": "Capital Social",
+    "category": "Contable",
+    "description": "Es el monto total que los socios/accionistas se comprometen a aportar a la empresa. Aparece en el lado derecho del balance general, dentro del patrimonio. No es lo mismo que el dinero en caja: es una cifra 'jurídica' que representa cuánto invirtieron los dueños. En una SAS puede ser desde $1.",
+    "examples": [
+      "Una SAS se constituye con capital social de $5,000. Eso no significa que tenga $5,000 en el banco: puede tener $1,000 en efectivo, $3,000 en equipo y $1,000 en inventario.",
+      "El 70% de las SAS en El Salvador se constituyeron con capital social de $1, el mínimo permitido por ley."
+    ]
+  },
+  {
+    "term": "Capital Suscrito",
+    "category": "Contable",
+    "description": "Es el monto total que los accionistas SE COMPROMETEN a aportar. En la SAS debe suscribirse el 100% al momento de constitución. Suscribir no significa pagar inmediatamente: es como firmar un pagaré donde decís 'me comprometo a poner esta cantidad'. El pago efectivo puede esperar hasta 2 años.",
+    "examples": [
+      "Juan constituye una SAS con capital suscrito de $5,000. Al momento de la constitución, los $5,000 están comprometidos, pero no necesariamente pagados. Juan tiene 24 meses para entregar todo el dinero.",
+      "Si se fija un capital de $500, los $500 deben estar suscritos desde el día uno. No se puede suscribir solo la mitad."
+    ]
+  },
+  {
+    "term": "Capital Pagado",
+    "category": "Contable",
+    "description": "Es el monto que los accionistas EFECTIVAMENTE YA ENTREGARON a la sociedad. Puede ser menor que el capital suscrito si se acordó pagar en plazos. Si después de 2 años no se paga todo, el capital se reduce a lo efectivamente pagado. Si eso queda en menos de $1, la sociedad se disuelve.",
+    "examples": [
+      "Capital suscrito: $5,000. Al constituir, el socio paga $500 en efectivo. Capital pagado: $500. Los otros $4,500 los debe integrar antes de que pasen 2 años.",
+      "Si tras 2 años solo se pagaron $3,000 de los $5,000 suscritos, el capital se reduce automáticamente a $3,000."
+    ]
+  },
+  {
+    "term": "Balance Inicial",
+    "category": "Contable",
+    "description": "Es la 'fotografía financiera' de tu negocio en el momento en que arranca. Muestra todo lo que la empresa tiene (activos), todo lo que debe (pasivos) y lo que realmente es de los dueños (patrimonio). Es obligatorio depositarlo en el Registro de Comercio. Para activos de $12,000 a $34,000 debe firmarlo un contador; arriba de $34,000 lo certifica un auditor externo.",
+    "examples": [
+      "Una SAS se constituye con $1 en efectivo, una computadora de $1,000 y mobiliario de $500. Su balance inicial muestra: Activo total $1,501 = Patrimonio $1,501 (capital social). Pasivo: $0.",
+      "El costo de depositar el balance inicial en el CNR es de $17.14."
+    ]
+  },
+  {
+    "term": "Activo",
+    "category": "Contable",
+    "description": "Es TODO lo que la empresa posee y tiene valor: dinero en caja, dinero en el banco, inventario, equipo, mobiliario, vehículos, terrenos, marcas registradas, cuentas por cobrar, etc. Es el lado izquierdo del balance general. Importantísimo: en El Salvador, los umbrales de obligaciones legales (matrícula, contabilidad formal, auditoría) se basan en el ACTIVO TOTAL, no en el capital social.",
+    "examples": [
+      "Una tienda tiene $2,000 en mercadería, $500 en efectivo, y un mostrador de $300. Su activo total es $2,800.",
+      "Una SAS con capital de $1 puede tener activos de $50,000 si recibió préstamos o generó ingresos. Y debe cumplir las obligaciones del umbral de $50,000, no las del umbral de $1."
+    ]
+  },
+  {
+    "term": "Pasivo",
+    "category": "Contable",
+    "description": "Es TODO lo que la empresa debe a terceros: préstamos bancarios, deudas con proveedores, impuestos por pagar, préstamos de los socios, etc. Aparece en el lado derecho del balance, junto con el patrimonio. Si los pasivos son muy altos comparados con el patrimonio, la empresa está muy endeudada.",
+    "examples": [
+      "Un negocio compró $5,000 en mercadería a crédito (pagará en 30 días). Esos $5,000 son un pasivo: 'Cuentas por pagar a proveedores'.",
+      "Si el dueño de una SAS le 'presta' bienes a la empresa en vez de aportarlos como capital, eso aparece como pasivo: 'Préstamo de accionista'."
+    ]
+  },
+  {
+    "term": "Patrimonio",
+    "category": "Contable",
+    "description": "Es lo que realmente pertenece a los dueños de la empresa después de restar las deudas. Se calcula como: Patrimonio = Activo − Pasivo. Incluye el capital social, las reservas y las utilidades acumuladas. Si el patrimonio es negativo, la empresa vale menos que sus deudas (está técnicamente en quiebra).",
+    "examples": [
+      "Una empresa tiene activos por $20,000 y pasivos por $8,000. Su patrimonio es $12,000. Eso es lo que 'vale' la participación de los dueños.",
+      "Una SAS con capital de $1 y sin deudas: Activo $1, Pasivo $0, Patrimonio $1."
+    ]
+  },
+  {
+    "term": "Ecuación Contable",
+    "category": "Contable",
+    "description": "Es la regla de oro de la contabilidad: Activo = Pasivo + Patrimonio. SIEMPRE debe cuadrar. Si una empresa tiene $10,000 en bienes, esos $10,000 provienen de dos fuentes: lo que debe a terceros (pasivo) y lo que es de los dueños (patrimonio). No hay excepción.",
+    "examples": [
+      "SAS con $1,501 en bienes, sin deudas: Activo ($1,501) = Pasivo ($0) + Patrimonio ($1,501). ¡Cuadra!",
+      "SAS con $1,501 en bienes, donde $1,500 son préstamo del socio: Activo ($1,501) = Pasivo ($1,500) + Patrimonio ($1). También cuadra."
+    ]
+  },
+  {
+    "term": "Balance General",
+    "category": "Contable",
+    "description": "Es el reporte financiero que muestra la situación de la empresa en un momento específico. Tiene tres secciones: activos (lo que tiene), pasivos (lo que debe) y patrimonio (lo que es de los dueños). Es obligatorio para empresas con activos de $12,000 o más, y sirve de base para calcular impuestos municipales y aranceles de matrícula.",
+    "examples": [
+      "Cada año, los comerciantes con activo mayor a $12,000 deben preparar estados financieros que incluyan el balance general, firmado por contador autorizado.",
+      "El balance inicial que se deposita en el CNR al crear la empresa es un tipo de balance general: muestra la foto financiera del día uno."
+    ]
+  },
+  {
+    "term": "Contabilidad Formal",
+    "category": "Contable",
+    "description": "Es el sistema completo de registro contable que exige la ley cuando los activos alcanzan ciertos montos. Incluye libros de Diario, Mayor y Estados Financieros, todos legalizados. Debe ser llevada por un contador público autorizado. Para negocios con activo menor a $12,000, basta con un libro sencillo de ingresos y egresos.",
+    "examples": [
+      "Una tienda con $15,000 en activos debe contratar un contador que lleve Libro Diario, Libro Mayor y prepare los estados financieros cada año.",
+      "Una SAS con activo menor a $12,000 puede llevar su contabilidad ella misma (el propio accionista) sin necesidad de contador."
+    ]
+  },
+  {
+    "term": "Capital en Especie",
+    "category": "Contable",
+    "description": "Es cuando un socio aporta bienes que no son dinero como parte de su inversión en la empresa: computadoras, mobiliario, vehículos, inventario, marcas registradas, software, etc. En la SAS, el valor de estos aportes lo determinan los propios accionistas en múltiplos de $1, sin necesidad de avalúo por perito independiente.",
+    "examples": [
+      "Andrea aporta su computadora ($1,000) y su impresora ($200) como capital en especie a su SAS. Recibe 1,200 acciones de $1 cada una.",
+      "Una startup aporta como capital en especie una aplicación móvil que sus socios valoran en $10,000 por acuerdo mutuo, recibiendo 10,000 acciones."
+    ]
+  },
+  {
+    "term": "Aporte en Industria",
+    "category": "Contable",
+    "description": "Es cuando un socio aporta su TRABAJO, conocimientos o habilidades como capital, en vez de dinero o bienes. La SAS lo permite expresamente: un programador puede aportar su trabajo de desarrollo, un diseñador su creatividad, un gerente su gestión. Se le asigna un valor en múltiplos de $1 por acuerdo entre los socios y recibe acciones a cambio.",
+    "examples": [
+      "Carlos no tiene dinero pero es experto en programación. Aporta su trabajo (valorado en $3,000) a la SAS y recibe 3,000 acciones. Su socio aporta $3,000 en efectivo y también recibe 3,000 acciones.",
+      "Una chef aporta su 'industria' (trabajo y recetas) a una SAS de comida, valorada en $5,000 por acuerdo con sus socios."
+    ]
+  },
+  {
+    "term": "Auditor Externo",
+    "category": "Contable",
+    "description": "Es un contador público certificado independiente que revisa y da fe de que los estados financieros de una empresa son correctos. Para comerciantes individuales, es obligatorio cuando el activo supera $34,000. Para SAS, no es obligatorio mientras califique como microempresa. Para S.A. tradicionales siempre es obligatorio.",
+    "examples": [
+      "Una tienda como comerciante individual con $40,000 en activos debe contratar un auditor externo que certifique sus estados financieros anuales.",
+      "Una SAS con 3 empleados y $8,000 en activos califica como microempresa y está exenta de nombrar auditor externo."
+    ]
+  },
+  {
+    "term": "Contador Autorizado (Contador Público)",
+    "category": "Contable",
+    "description": "Es un profesional certificado por el Consejo de Vigilancia de la Profesión de Contaduría Pública que tiene autorización legal para llevar contabilidad formal y firmar estados financieros. Es obligatorio contratarlo cuando el activo del negocio alcanza los $12,000.",
+    "examples": [
+      "Con activos de $15,000, Luis debe contratar un contador público autorizado que le lleve los libros de Diario, Mayor y prepare sus estados financieros.",
+      "El balance inicial de un negocio con activos entre $12,000 y $34,000 debe estar firmado por un contador autorizado. Por debajo de $12,000, lo puede firmar el propio comerciante."
+    ]
+  },
+  {
+    "term": "Depreciación",
+    "category": "Contable",
+    "description": "Es la pérdida de valor que sufren los bienes de la empresa con el uso y el paso del tiempo. Una computadora nueva de $1,000 no vale $1,000 después de 3 años. La depreciación permite reflejar esa pérdida gradual en la contabilidad y es relevante al valorar aportes en especie de bienes usados.",
+    "examples": [
+      "Andrea aporta una computadora que compró hace 2 años por $1,500. Aplicando depreciación, la valora en $1,000 para su aporte en especie a la SAS.",
+      "Un vehículo de $20,000 se deprecia un 20% anual. Después de 3 años vale $8,000 en libros contables."
+    ]
+  },
+  {
+    "term": "NIT (Número de Identificación Tributaria)",
+    "category": "Fiscal",
+    "description": "Es el número que te identifica ante el Ministerio de Hacienda para efectos de impuestos. Para salvadoreños mayores de 18 años, el DUI ya funciona como NIT (están homologados). Si necesitás el documento físico o digital, se obtiene en la DGII. Cuesta $1.67 y es inmediato. Es el primer paso para cualquier formalización.",
+    "examples": [
+      "María saca su NIT digital desde el portal de la DGII (portaldgii.mh.gob.sv) en minutos, sin salir de casa. Costo: $1.67.",
+      "Para un salvadoreño mayor de 18 años, su número de DUI ES su NIT. No necesita hacer trámite adicional a menos que quiera el documento impreso."
+    ]
+  },
+  {
+    "term": "NRC (Número de Registro de Contribuyente)",
+    "category": "Fiscal",
+    "description": "Es el registro que te convierte en contribuyente del IVA ante el Ministerio de Hacienda. Te permite emitir facturas con IVA (comprobantes de crédito fiscal). Es obligatorio para comerciantes individuales con activos mayores a $2,285.71 o ventas anuales arriba de $5,714.28. Para TODAS las sociedades (incluida la SAS), es obligatorio sin importar el monto de activos.",
+    "examples": [
+      "José abre una tienda con $5,000 en activos. Debe inscribirse como contribuyente IVA y obtener su NRC dentro de los 15 días hábiles siguientes al inicio de operaciones. Es gratis.",
+      "Una SAS con $1 de capital debe inscribirse en el NRC obligatoriamente, porque la ley de IVA solo exime a personas naturales con activos bajos, nunca a sociedades."
+    ]
+  },
+  {
+    "term": "IVA (Impuesto al Valor Agregado)",
+    "category": "Fiscal",
+    "description": "Es un impuesto del 13% que se cobra sobre la venta de bienes y servicios. El negocio lo cobra a sus clientes y luego lo paga al gobierno. Se declara mensualmente con el formulario F-07, dentro de los primeros 10 días hábiles del mes siguiente. Aunque no hayas vendido nada, tenés que presentar la declaración.",
+    "examples": [
+      "Vendés un producto por $100. Cobrás $113 ($100 + $13 de IVA). Esos $13 no son tuyos: tenés que declararlos y pagarlos a Hacienda.",
+      "Si compraste mercadería por $50 + $6.50 de IVA, y vendiste por $100 + $13 de IVA, pagás la diferencia: $13 - $6.50 = $6.50 a Hacienda."
+    ]
+  },
+  {
+    "term": "Débito Fiscal",
+    "category": "Fiscal",
+    "description": "Es el IVA que vos le COBRÁS a tus clientes cuando les vendés algo. Se llama 'débito' porque es una deuda con Hacienda: ese dinero no es tuyo, solo lo recolectás. Al final del mes, sumás todos los débitos fiscales de tus ventas.",
+    "examples": [
+      "Vendiste $10,000 en el mes. Tu débito fiscal es $1,300 (13% de $10,000). Ese dinero lo debés a Hacienda.",
+      "Si emitiste 50 facturas en el mes con IVA totalizado de $850, tu débito fiscal del mes es $850."
+    ]
+  },
+  {
+    "term": "Crédito Fiscal",
+    "category": "Fiscal",
+    "description": "Es el IVA que vos PAGASTE en tus compras relacionadas con el negocio. Se llama 'crédito' porque podés restarlo de lo que debés. Es como un descuento sobre el IVA que tenés que pagar. Por eso es tan importante pedir factura en todas las compras del negocio.",
+    "examples": [
+      "Compraste $6,000 en mercadería y pagaste $780 de IVA. Esos $780 son tu crédito fiscal. Si tu débito fiscal fue $1,300, solo pagás $520 a Hacienda ($1,300 - $780).",
+      "Compraste una computadora de $800 + $104 de IVA para tu negocio. Esos $104 son crédito fiscal que restás de tu declaración mensual."
+    ]
+  },
+  {
+    "term": "Remanente de Crédito Fiscal",
+    "category": "Fiscal",
+    "description": "Cuando tu crédito fiscal (IVA pagado en compras) es MAYOR que tu débito fiscal (IVA cobrado en ventas), la diferencia se llama 'remanente'. No perdés ese exceso: se arrastra al mes siguiente para restarlo del IVA futuro. Esto pasa frecuentemente al inicio del negocio, cuando comprás mucho pero vendés poco.",
+    "examples": [
+      "En enero compraste $20,000 en equipo (crédito fiscal $2,600) pero solo vendiste $3,000 (débito fiscal $390). Remanente: $2,210 que se arrastran a febrero.",
+      "Durante 3 meses seguidos, tus compras superaron tus ventas. El remanente acumulado de $5,000 se va aplicando mes a mes conforme las ventas superen las compras."
+    ]
+  },
+  {
+    "term": "Pago a Cuenta",
+    "category": "Fiscal",
+    "description": "Es un anticipo mensual del Impuesto sobre la Renta que pagás cada mes, equivalente al 1.75% de tus ingresos brutos. Se declara con el formulario F-14 en los primeros 10 días hábiles del mes siguiente. No es un impuesto adicional: lo que pagás mes a mes se descuenta de tu declaración anual de renta.",
+    "examples": [
+      "Tu negocio facturó $10,000 en marzo. Debés pagar $175 como pago a cuenta (1.75%). Ese dinero se acredita cuando declarés renta en abril del año siguiente.",
+      "Si durante todo el año pagaste $2,100 en pagos a cuenta, y tu impuesto sobre la renta anual es $3,000, solo pagás la diferencia de $900 en la declaración anual."
+    ]
+  },
+  {
+    "term": "Impuesto sobre la Renta (ISR)",
+    "category": "Fiscal",
+    "description": "Es el impuesto anual que se paga sobre las ganancias netas del negocio. Se declara en abril con el formulario F-11. Las tasas para personas naturales van del 0% (hasta $6,600 anuales) al 30% (arriba de $24,457). Los pagos a cuenta mensuales se descuentan del monto final.",
+    "examples": [
+      "Tu negocio ganó $15,000 netos en el año. Pagás 10% sobre los primeros $4,143 (exceso de $6,600 a $10,743) = $414, más 20% sobre el resto. Total aproximado: $1,571.",
+      "Si tus ganancias netas fueron $5,000 (debajo de $6,600), estás exento de impuesto sobre la renta."
+    ]
+  },
+  {
+    "term": "Impuestos Municipales",
+    "category": "Fiscal",
+    "description": "Son impuestos que cobra la alcaldía de tu municipio sobre el activo imponible de tu negocio. Se declaran anualmente en los primeros 3 meses del año. Las tasas varían según el municipio y la actividad económica. Son independientes de los impuestos nacionales (IVA, Renta).",
+    "examples": [
+      "Una tienda en San Salvador con $20,000 en activos paga impuesto municipal anual según la tabla de tasas de la Alcaldía de San Salvador, que depende de su rubro.",
+      "La inscripción en la alcaldía de San Salvador es gratuita. A partir de ahí, se paga el impuesto municipal anual basado en el activo."
+    ]
+  },
+  {
+    "term": "Matrícula de Comercio",
+    "category": "Registral",
+    "description": "Es como la 'licencia de conducir' de tu negocio. La emite el Registro de Comercio del CNR y te autoriza formalmente a operar como comerciante. Es obligatoria para comerciantes individuales con activos de $12,000 o más, y para TODAS las sociedades sin importar el activo. Se renueva cada año y el arancel depende del activo.",
+    "examples": [
+      "Una tienda con $57,150 en activos paga aproximadamente $91.43 por la matrícula de comercio. El trámite tarda 3-5 días hábiles (o menos con servicio express de $40).",
+      "Las SAS creadas bajo el Decreto 905 tuvieron matrícula gratuita durante el primer año de vigencia de la ley."
+    ]
+  },
+  {
+    "term": "Registro de Comercio (CNR)",
+    "category": "Registral",
+    "description": "Es la oficina del Centro Nacional de Registros donde se inscriben los comerciantes y sociedades mercantiles. Ahí se depositan balances, se obtienen matrículas de comercio y se constituyen las SAS. Su plataforma digital es CreaEmpresa.gob.sv. Toda la vida legal de tu empresa queda registrada aquí.",
+    "examples": [
+      "Para constituir una SAS, entrás a CreaEmpresa.gob.sv (plataforma del CNR), llenás el formulario y en horas tenés tu empresa registrada.",
+      "El balance inicial se deposita en el Registro de Comercio por $17.14."
+    ]
+  },
+  {
+    "term": "Matrícula de Empresa y Registro de Local",
+    "category": "Registral",
+    "description": "Son dos registros relacionados: la matrícula identifica a tu empresa y el registro de local identifica cada establecimiento físico donde operás. Si tenés una tienda central y dos sucursales, necesitás una matrícula de empresa y tres registros de local. Se solicitan juntos.",
+    "examples": [
+      "Andrea tiene una panadería con dos puntos de venta. Saca una matrícula de empresa y registra sus dos locales.",
+      "La solicitud incluye datos declarados bajo juramento: nombre de la empresa, actividad económica y dirección de cada establecimiento."
+    ]
+  },
+  {
+    "term": "Solvencia Estadística",
+    "category": "Registral",
+    "description": "Es un documento que certifica que tu negocio está al día con la obligación de proporcionar datos estadísticos nacionales. Antes la emitía DIGESTYC, ahora la emite la ONEC a través del BCR. Es REQUISITO obligatorio para renovar la matrícula de comercio cada año. Se tramita en línea en solvencias.bcr.gob.sv. Cuesta de $5 a $21 según el activo.",
+    "examples": [
+      "Cada año, antes de renovar la matrícula de comercio, debés obtener la solvencia estadística en solvencias.bcr.gob.sv. Si no la tenés, no te renuevan la matrícula.",
+      "El trámite en línea tarda de 1 a 8 horas y cuesta entre $5 y $21 dependiendo del tamaño del negocio."
+    ]
+  },
+  {
+    "term": "ISSS (Instituto Salvadoreño del Seguro Social)",
+    "category": "Laboral",
+    "description": "Es la institución que brinda servicios de salud (consultas, medicinas, hospitalización) a los trabajadores y sus familias. Todo patrono que contrate al menos un empleado debe inscribirse en el ISSS dentro de los 5 días siguientes a la contratación. El patrono paga 7.50% del salario de cada empleado (tope: $75/mes por empleado) y al trabajador se le descuenta 3%.",
+    "examples": [
+      "Contratás a tu primer empleado con salario de $365/mes. Debés inscribirte en el ISSS en 5 días. Pagarás $27.38 mensuales como patrono (7.50%) y le descontarás $10.95 al empleado (3%).",
+      "El tope de cotización patronal del ISSS es sobre un salario máximo de $1,000/mes, así que el máximo que pagás por empleado es $75/mes."
+    ]
+  },
+  {
+    "term": "AFP (Administradora de Fondos de Pensiones)",
+    "category": "Laboral",
+    "description": "Son las instituciones que administran las pensiones de los trabajadores (AFP Confía y AFP Crecer). El patrono aporta 8.75% del salario de cada empleado (sin tope) y al trabajador se le descuenta 7.25%. La inscripción patronal debe hacerse dentro de los 20 días de la relación laboral. Es gratuita.",
+    "examples": [
+      "Para un empleado con salario de $500/mes: el patrono paga $43.75 (8.75%) y al empleado se le descuenta $36.25 (7.25%) para su fondo de pensión.",
+      "A diferencia del ISSS, la AFP no tiene tope de salario. Si pagás $3,000 de salario, el aporte patronal es $262.50 mensuales."
+    ]
+  },
+  {
+    "term": "INSAFORP (Instituto Salvadoreño de Formación Profesional)",
+    "category": "Laboral",
+    "description": "Es la institución que promueve la capacitación laboral. Los patronos con 5 o más empleados deben pagar un 1% del salario de cada trabajador como aporte mensual. A cambio, la empresa puede acceder a programas de capacitación gratuitos para sus empleados.",
+    "examples": [
+      "Una empresa con 6 empleados que ganan $400 cada uno paga $24/mes al INSAFORP (1% de $2,400 en planilla).",
+      "Una SAS con 3 empleados no paga INSAFORP porque el requisito mínimo es tener 5 o más trabajadores."
+    ]
+  },
+  {
+    "term": "MTPS (Ministerio de Trabajo y Previsión Social)",
+    "category": "Laboral",
+    "description": "Es la institución que regula las relaciones laborales en El Salvador. Todo negocio con empleados debe registrar su centro de trabajo en el MTPS. El registro inicial cuesta $50 y la actualización anual $25. Se puede hacer en línea en oportunidadempresas.mtps.gob.sv.",
+    "examples": [
+      "Después de contratar tu primer empleado, debés registrar tu centro de trabajo en el MTPS pagando $50. Cada año actualizás por $25.",
+      "El MTPS también es donde se presentan denuncias laborales y se median conflictos entre patronos y empleados."
+    ]
+  },
+  {
+    "term": "Cargas Patronales",
+    "category": "Laboral",
+    "description": "Es el costo adicional que un patrono paga sobre el salario de cada empleado por concepto de seguridad social y capacitación. En El Salvador, suman aproximadamente 17.25% del salario: 7.50% ISSS + 8.75% AFP + 1% INSAFORP. Esto significa que cada empleado realmente cuesta un 17.25% más de lo que dice su salario.",
+    "examples": [
+      "Si le pagás $365/mes a un empleado (salario mínimo comercio), las cargas patronales son $63/mes adicionales. El costo real de ese empleado es $428/mes.",
+      "Para un salario de $1,000/mes: ISSS $75 + AFP $87.50 + INSAFORP $10 = $172.50 de cargas patronales."
+    ]
+  },
+  {
+    "term": "CNR (Centro Nacional de Registros)",
+    "category": "Institucional",
+    "description": "Es la institución que administra los registros públicos de El Salvador: propiedad, comercio, propiedad intelectual, etc. A través de su Registro de Comercio se inscriben las empresas, se depositan balances y se emiten matrículas de comercio. Su plataforma digital CreaEmpresa.gob.sv permite constituir SAS en línea.",
+    "examples": [
+      "Toda la vida legal de tu empresa pasa por el CNR: constitución, matrícula, depósito de balances, certificaciones.",
+      "El CNR reportó que más de 3,800 SAS se constituyeron a través de CreaEmpresa.gob.sv en el primer año."
+    ]
+  },
+  {
+    "term": "DGII (Dirección General de Impuestos Internos)",
+    "category": "Institucional",
+    "description": "Es la dirección del Ministerio de Hacienda encargada de administrar los impuestos internos (IVA, Renta, etc.). Ahí se obtiene el NIT, se inscribe el NRC y se presentan las declaraciones de impuestos. Su portal digital es portaldgii.mh.gob.sv.",
+    "examples": [
+      "Para obtener tu NIT digital, entrás al portal de la DGII y lo solicitás en línea por $1.67.",
+      "Todas las declaraciones de IVA, Pago a Cuenta e Impuesto sobre la Renta se presentan y pagan a través del portal de la DGII."
+    ]
+  },
+  {
+    "term": "MiEmpresa.gob.sv",
+    "category": "Institucional",
+    "description": "Es la ventanilla digital interinstitucional del gobierno salvadoreño que integra en una sola plataforma los trámites de Hacienda, CNR, ISSS, MTPS, AFP, CONAMYPE y alcaldías. Permite hacer todo el registro de una empresa en un solo lugar, reduciendo el tiempo de un mes a 5 días hábiles.",
+    "examples": [
+      "En vez de ir oficina por oficina, Mario entra a MiEmpresa.gob.sv y tramita NIT, NRC, matrícula, inscripción patronal y registro municipal, todo desde un solo portal.",
+      "MiEmpresa.gob.sv integra las alcaldías de San Salvador y Santa Ana. Para otras alcaldías, hay que ir presencialmente."
+    ]
+  },
+  {
+    "term": "CreaEmpresa.gob.sv",
+    "category": "Institucional",
+    "description": "Es la plataforma digital del CNR específicamente diseñada para constituir sociedades (especialmente SAS) en línea. También permite solicitar matrículas, depositar balances y obtener certificaciones del Registro de Comercio.",
+    "examples": [
+      "Laura entra a CreaEmpresa.gob.sv, llena el formulario de constitución de su SAS, paga en línea y en pocas horas tiene su sociedad legalmente constituida.",
+      "En esta plataforma también se puede renovar la matrícula de comercio sin ir al CNR."
+    ]
+  },
+  {
+    "term": "DIGESTYC / ONEC / BCR",
+    "category": "Institucional",
+    "description": "DIGESTYC era la Dirección General de Estadística y Censos. Sus funciones pasaron a la ONEC (Oficina Nacional de Estadística y Censos) bajo el BCR (Banco Central de Reserva). Emiten la solvencia estadística, un documento obligatorio para renovar la matrícula de comercio cada año.",
+    "examples": [
+      "Antes ibas a DIGESTYC por la solvencia estadística. Ahora se tramita en solvencias.bcr.gob.sv, administrado por la ONEC del BCR.",
+      "Sin la solvencia estadística al día, el CNR no te renueva la matrícula de comercio."
+    ]
+  },
+  {
+    "term": "CONAMYPE",
+    "category": "Institucional",
+    "description": "Es la Comisión Nacional de la Micro y Pequeña Empresa. Ofrece programas de apoyo, capacitación y financiamiento para emprendedores. Está integrada en MiEmpresa.gob.sv y facilita el registro MYPE (Micro y Pequeña Empresa) que puede dar beneficios fiscales y simplificaciones.",
+    "examples": [
+      "A través de CONAMYPE podés acceder a capacitaciones gratuitas y asesoría para tu nuevo negocio.",
+      "El registro MYPE en CONAMYPE puede eximir a tu SAS de ciertas obligaciones como el auditor externo si calificás como microempresa."
+    ]
+  },
+  {
+    "term": "Decreto Legislativo 905",
+    "category": "Legal",
+    "description": "Es la ley aprobada el 6 de diciembre de 2023 (vigente desde el 12 de febrero de 2024) que creó la SAS en El Salvador. Reformó el Código de Comercio añadiendo los artículos 305-A al 305-Z. Fue una de las reformas empresariales más importantes del país, eliminando barreras como la escritura pública, el capital mínimo alto y la intervención notarial.",
+    "examples": [
+      "Antes del Decreto 905, crear una empresa con responsabilidad limitada costaba más de $1,000 y tomaba semanas. Después, se puede hacer con $1 y un formulario en línea.",
+      "El Decreto 905 también estableció que durante el primer año, la inscripción y matrícula de las SAS fueron gratuitas."
+    ]
+  },
+  {
+    "term": "Disolución de Sociedad",
+    "category": "Legal",
+    "description": "Es el proceso legal por el cual una sociedad deja de existir. En la SAS, una de las causales de disolución es no pagar el capital suscrito en el plazo de 2 años. Si solo se paga parcialmente, el capital se reduce a lo efectivamente pagado; pero si eso queda por debajo de $1, la sociedad se disuelve.",
+    "examples": [
+      "Una SAS suscribió $10,000 de capital pero después de 2 años no pagó ni un centavo. La ley exige su disolución.",
+      "Si de $5,000 suscritos solo se pagaron $0.50, como es menor a $1 (mínimo legal), la SAS se disuelve."
+    ]
+  },
+  {
+    "term": "Dictamen Fiscal",
+    "category": "Fiscal",
+    "description": "Es una auditoría fiscal obligatoria realizada por un auditor fiscal autorizado. Aplica cuando el activo total al 31 de diciembre supera $1,142,857.14 o los ingresos anuales exceden cierto umbral. El auditor revisa que los impuestos estén correctamente calculados y pagados. Aplica a todas las formas societarias, incluida la SAS.",
+    "examples": [
+      "Una empresa con $1.5 millones en activos debe contratar un auditor fiscal que emita el dictamen fiscal anual. Si no lo hace, enfrenta multas severas.",
+      "Para la gran mayoría de SAS nuevas con activos modestos, el dictamen fiscal no aplica."
+    ]
+  },
+  {
+    "term": "PAE (Punto de Atención Empresarial)",
+    "category": "Registral",
+    "description": "Es la contraseña o código que se obtiene al inscribirse en la alcaldía municipal. Permite al negocio acceder a servicios y trámites municipales. En San Salvador, la inscripción que genera el PAE es gratuita.",
+    "examples": [
+      "Al inscribirte en la Alcaldía de San Salvador, te dan una contraseña PAE que usarás para trámites municipales futuros.",
+      "El PAE te identifica como contribuyente ante la municipalidad y habilita el pago de impuestos municipales."
+    ]
+  },
+  {
+    "term": "Libros de IVA",
+    "category": "Fiscal",
+    "description": "Son tres libros contables obligatorios para los contribuyentes de IVA: Libro de Ventas a Contribuyentes, Libro de Ventas a Consumidor Final, y Libro de Compras. En ellos se registra cada factura emitida y recibida. Sirven para calcular el IVA a pagar cada mes.",
+    "examples": [
+      "Cada vez que emitís un comprobante de crédito fiscal, lo anotás en el Libro de Ventas a Contribuyentes. Cada factura de consumidor final va en su propio libro.",
+      "Al final del mes, la suma del IVA en tus libros de ventas (débito) menos la suma del IVA en tu libro de compras (crédito) es lo que pagás o arrastras como remanente."
+    ]
+  },
+  {
+    "term": "Comprobante de Crédito Fiscal (CCF)",
+    "category": "Fiscal",
+    "description": "Es la factura que se emite cuando le vendés a otro contribuyente de IVA (otro negocio registrado). Detalla el IVA por separado y permite al comprador usarlo como crédito fiscal. Es diferente de la factura de consumidor final, donde el IVA va incluido en el precio.",
+    "examples": [
+      "Vendés mercadería por $500 a otro negocio con NRC. Le emitís un CCF: $500 + $65 IVA = $565 total. El comprador usa esos $65 como crédito fiscal.",
+      "Si le vendés a un consumidor final (persona sin NRC), emitís factura de consumidor final por $565 con IVA incluido."
+    ]
+  }
+]
