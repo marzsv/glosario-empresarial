@@ -191,37 +191,21 @@ function setupModal() {
 
 // ===== GUIDE LOADING =====
 function loadGuide() {
-  fetch('./guide-content.html')
-    .then(r => r.text())
-    .then(html => {
-      document.getElementById('guide-container').innerHTML = html;
-      // Attach click handlers to term links
-      document.querySelectorAll('.term-link').forEach(el => {
-        el.addEventListener('click', (e) => {
-          e.preventDefault();
-          openTermModal(el.dataset.term);
-        });
-      });
-    })
-    .catch(err => {
-      console.error('Error loading guide:', err);
-      document.getElementById('guide-container').innerHTML = '<div class="no-results">❌ Error cargando la guía.</div>';
+  // Guide content is already inline in HTML
+  // Just attach click handlers to term links
+  document.querySelectorAll('.term-link').forEach(el => {
+    el.addEventListener('click', (e) => {
+      e.preventDefault();
+      openTermModal(el.dataset.term);
     });
+  });
 }
 
-// Load terms from JSON and initialize
+// Load terms and initialize
 document.addEventListener('DOMContentLoaded', () => {
-  fetch('./terms.json')
-    .then(r => r.json())
-    .then(data => {
-      termsRaw = data;
-      terms = mapTerms(data);
-      init();
-      setupModal();
-      loadGuide();
-    })
-    .catch(err => {
-      console.error('Error loading terms:', err);
-      document.getElementById('glossary').innerHTML = '<div class="no-results">❌ Error cargando los términos del glosario.</div>';
-    });
+  termsRaw = TERMS_DATA;
+  terms = mapTerms(TERMS_DATA);
+  init();
+  setupModal();
+  loadGuide();
 });
