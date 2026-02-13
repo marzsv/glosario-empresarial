@@ -511,5 +511,203 @@ const TERMS_DATA = [
       "Vendés mercadería por $500 a otro negocio con NRC. Le emitís un CCF: $500 + $65 IVA = $565 total. El comprador usa esos $65 como crédito fiscal.",
       "Si le vendés a un consumidor final (persona sin NRC), emitís factura de consumidor final por $565 con IVA incluido."
     ]
+  },
+  {
+    "term": "Flujo de Caja",
+    "category": "Contable",
+    "description": "Es el movimiento real de dinero que entra y sale de tu negocio en un período determinado. No es lo mismo que ganancia: podés tener ganancias en papel pero quedarte sin efectivo si tus clientes no te pagan a tiempo. El flujo de caja te dice si tenés suficiente plata líquida para pagar proveedores, empleados y gastos del día a día.",
+    "examples": [
+      "Tu negocio facturó $10,000 en el mes (ganancia en papel), pero los clientes te pagarán en 60 días. Mientras tanto, tenés que pagar $5,000 en gastos. Tu flujo de caja este mes es negativo aunque hayas 'ganado' plata.",
+      "Una tienda de ropa vende $8,000 al contado y paga $6,000 en gastos. Su flujo de caja del mes es +$2,000: le quedan $2,000 más en el bolsillo que al inicio."
+    ]
+  },
+  {
+    "term": "Capital de Trabajo",
+    "category": "Contable",
+    "description": "Es la plata que tu negocio necesita para operar día a día sin quedarse varado. Se calcula restando lo que debés a corto plazo (pasivo corriente) de lo que tenés disponible a corto plazo (activo corriente). Si es positivo, podés cubrir tus gastos inmediatos. Si es negativo, necesitás financiamiento urgente.",
+    "examples": [
+      "Tu tienda tiene $15,000 en mercadería e inventario y $3,000 en caja (activo corriente = $18,000), pero debés $10,000 a proveedores a 30 días (pasivo corriente). Tu capital de trabajo es $8,000: suficiente para operar tranquilo.",
+      "Un restaurante tiene $2,000 en caja pero debe $5,000 en pagos este mes. Capital de trabajo negativo de -$3,000: necesita un préstamo o cobrar rápido a sus deudores."
+    ]
+  },
+  {
+    "term": "Activo Corriente",
+    "category": "Contable",
+    "description": "Son los bienes y derechos de tu empresa que se pueden convertir en efectivo en menos de un año. Incluye el dinero en caja, dinero en el banco, inventario (mercadería para vender), y cuentas por cobrar (lo que te deben los clientes). Es la parte 'líquida' de tus activos.",
+    "examples": [
+      "Una tienda tiene $2,000 en caja, $5,000 en mercadería lista para vender y $3,000 que le deben clientes. Su activo corriente total es $10,000.",
+      "Un depósito a plazo de 6 meses por $8,000 es activo corriente porque se convierte en efectivo antes de un año."
+    ]
+  },
+  {
+    "term": "Activo No Corriente",
+    "category": "Contable",
+    "description": "Son los bienes de tu empresa que NO se van a convertir en efectivo en el corto plazo (más de un año). Son los bienes que usás para operar el negocio: equipo de cómputo, maquinaria, vehículos, terrenos, edificios, marcas registradas. Se les conoce también como 'activos fijos' o 'activos de largo plazo'.",
+    "examples": [
+      "El horno industrial de una panadería valorado en $15,000 es un activo no corriente: no lo van a vender, lo usan para producir pan todos los días.",
+      "Un vehículo de reparto de $20,000 y el local comercial de $80,000 son activos no corrientes. La mercadería que transportan sí es activo corriente."
+    ]
+  },
+  {
+    "term": "Amortización",
+    "category": "Contable",
+    "description": "Es lo mismo que la depreciación, pero aplicada a bienes intangibles (cosas que no podés tocar): software, patentes, licencias, marcas registradas, derechos de autor. Así como una computadora pierde valor con el tiempo, un software también 'se gasta' contablemente. La amortización distribuye ese costo a lo largo de su vida útil.",
+    "examples": [
+      "Compraste una licencia de software contable por $1,200 con vida útil de 3 años. Amortizás $400 por año: cada año registrás $400 como gasto en tu contabilidad.",
+      "Una empresa registró su marca comercial por $5,000. Amortiza ese valor a lo largo de 10 años: $500 anuales como gasto contable."
+    ]
+  },
+  {
+    "term": "Libro Diario",
+    "category": "Contable",
+    "description": "Es el registro donde se anotan TODAS las transacciones del negocio en orden cronológico (por fecha). Cada vez que vendés, comprás, pagás un gasto o recibís un pago, se registra aquí primero. Es como el diario personal de tu empresa: todo queda anotado día por día. Es obligatorio cuando llevás contabilidad formal (activo ≥ $12,000).",
+    "examples": [
+      "El 15 de marzo vendiste $500 en mercadería. Ese mismo día lo anotás en el Libro Diario: fecha, descripción, cuentas afectadas y montos.",
+      "Pagaste $200 de electricidad el 20 de marzo. Va al Libro Diario con la fecha, la cuenta de gastos y la cuenta de banco o caja."
+    ]
+  },
+  {
+    "term": "Libro Mayor",
+    "category": "Contable",
+    "description": "Es un resumen organizado por cuenta contable de todas las transacciones que primero se registraron en el Libro Diario. Mientras el Diario es cronológico (por fecha), el Mayor es temático (por cuenta): todas las ventas juntas, todos los gastos de alquiler juntos, etc. Te permite ver de un vistazo cuánto has vendido, cuánto has gastado en cada rubro.",
+    "examples": [
+      "En el Libro Mayor, la cuenta 'Ventas' muestra todas las ventas del año sumadas: enero $3,000, febrero $4,500, marzo $2,800... Total: $10,300.",
+      "La cuenta 'Banco' en el Libro Mayor muestra todos los depósitos y retiros del año, con el saldo actualizado después de cada movimiento."
+    ]
+  },
+  {
+    "term": "Representante Legal",
+    "category": "Legal",
+    "description": "Es la persona autorizada para actuar y firmar en nombre de la empresa. En una SAS, puede ser el administrador único o el presidente de la junta directiva. Es quien firma contratos, abre cuentas bancarias, comparece en juicios y toma decisiones vinculantes para la sociedad. No tiene que ser accionista.",
+    "examples": [
+      "María es la única accionista de su SAS y se nombró administradora única. Ella es la representante legal: firma los contratos con proveedores y clientes en nombre de la empresa.",
+      "Una SAS con 3 socios nombra a Carlos como representante legal aunque solo tiene el 10% de las acciones. Carlos firma todo en nombre de la sociedad."
+    ]
+  },
+  {
+    "term": "Razón Social",
+    "category": "Legal",
+    "description": "Es el nombre legal oficial con el que una empresa está inscrita en el Registro de Comercio. Es el nombre que aparece en documentos legales, contratos, facturas y trámites oficiales. En una SAS debe incluir las siglas 'SAS' o 'Sociedad por Acciones Simplificada' al final. No puede ser igual al de otra empresa ya registrada.",
+    "examples": [
+      "La razón social es 'Tecnología Creativa, SAS' — así aparece en el Registro de Comercio, facturas y contratos legales.",
+      "Dos empresas no pueden tener la misma razón social. Si alguien ya registró 'Café Salvadoreño, SAS', tenés que elegir otro nombre."
+    ]
+  },
+  {
+    "term": "Nombre Comercial",
+    "category": "Legal",
+    "description": "Es el nombre con el que el público conoce tu negocio. Puede ser diferente de la razón social. Es el nombre que ponés en el rótulo de tu tienda, en las redes sociales y en la publicidad. Se puede registrar como marca en el CNR para protegerlo legalmente.",
+    "examples": [
+      "La razón social es 'Alimentos del Pacífico, SAS', pero el restaurante se llama 'El Buen Sabor' para el público. 'El Buen Sabor' es el nombre comercial.",
+      "Una SAS registrada como 'JMR Soluciones Digitales, SAS' opera bajo el nombre comercial 'PixelPro' en redes sociales y publicidad."
+    ]
+  },
+  {
+    "term": "Persona Natural",
+    "category": "Legal",
+    "description": "Es cualquier ser humano como sujeto de derechos y obligaciones ante la ley. Cuando emprendés como comerciante individual, actuás como persona natural: no creás un ente legal separado. En contraste, una SAS o S.A. es una persona jurídica (un ente legal distinto de las personas que la crearon).",
+    "examples": [
+      "María vende pupusas como comerciante individual. Ante la ley opera como persona natural: ella misma es la responsable de todo, no hay empresa separada.",
+      "Cuando Hacienda dice 'persona natural con actividades empresariales', se refiere a alguien que tiene negocio propio sin haber creado una sociedad."
+    ]
+  },
+  {
+    "term": "Estatutos (Pacto Social)",
+    "category": "Legal",
+    "description": "Son las reglas internas que gobiernan cómo funciona una sociedad: cómo se toman decisiones, cómo se reparten utilidades, cómo se venden acciones, qué pasa si un socio quiere salir. En sociedades tradicionales (S.A. de C.V.) van en la escritura pública. En la SAS, se definen en el formulario de constitución y pueden ser mucho más flexibles.",
+    "examples": [
+      "Los estatutos de una SAS establecen que las decisiones se toman por mayoría simple de acciones y que las utilidades se reparten proporcionalmente cada trimestre.",
+      "En el pacto social de una S.A. de C.V. se establece que ningún accionista puede vender sus acciones sin ofrecerlas primero a los demás socios (derecho de preferencia)."
+    ]
+  },
+  {
+    "term": "Accionista",
+    "category": "Legal",
+    "description": "Es la persona (natural o jurídica) que posee acciones en una sociedad. En una SAS, los accionistas son los dueños: cada acción de $1 representa una parte de la empresa. El accionista tiene derecho a recibir utilidades (dividendos), votar en las decisiones y vender sus acciones. Es diferente de 'socio', que es un término más general.",
+    "examples": [
+      "Pedro tiene 3,000 acciones de una SAS con capital de $5,000. Es accionista con el 60% de la empresa y tiene derecho al 60% de las utilidades.",
+      "Una SAS unipersonal tiene un solo accionista que es dueño del 100% de las acciones. Si vende la mitad de sus acciones a otra persona, pasan a ser dos accionistas."
+    ]
+  },
+  {
+    "term": "Factura de Consumidor Final",
+    "category": "Fiscal",
+    "description": "Es el documento que se emite cuando le vendés a una persona que NO es contribuyente de IVA (el público en general, personas sin NRC). A diferencia del Comprobante de Crédito Fiscal, aquí el IVA va incluido en el precio y no se detalla por separado. El comprador no puede usar ese IVA como crédito fiscal.",
+    "examples": [
+      "Un cliente compra zapatos por $50 en tu tienda. Le emitís factura de consumidor final por $50 (el IVA de $5.75 ya está incluido en ese precio).",
+      "Si el comprador te pide comprobante de crédito fiscal porque tiene NRC, debés emitirle CCF en vez de factura de consumidor final, desglosando el IVA aparte."
+    ]
+  },
+  {
+    "term": "Retención de ISR",
+    "category": "Fiscal",
+    "description": "Es cuando la empresa o persona que te paga te descuenta una parte del impuesto sobre la renta ANTES de entregarte el dinero, y lo paga directamente a Hacienda en tu nombre. Es como un anticipo forzoso de tu impuesto anual. Te dan un comprobante de retención que usás para descontar ese monto cuando declarés renta.",
+    "examples": [
+      "Prestás un servicio profesional por $1,000. La empresa que te contrata te retiene el 10% ($100) y te paga $900. Esos $100 los reporta a Hacienda y vos los descontás de tu declaración anual.",
+      "Si sos empleado con salario de $2,000/mes, tu patrono te retiene ISR cada mes según la tabla de retención y lo paga a Hacienda. En abril ajustás con la declaración anual."
+    ]
+  },
+  {
+    "term": "Ejercicio Fiscal",
+    "category": "Fiscal",
+    "description": "Es el período de tiempo que se usa para calcular impuestos y preparar estados financieros. En El Salvador, el ejercicio fiscal va del 1 de enero al 31 de diciembre de cada año. Al terminar el ejercicio, se preparan los estados financieros anuales y se presentan las declaraciones de impuesto sobre la renta.",
+    "examples": [
+      "Tu SAS abrió operaciones en julio 2024. Su primer ejercicio fiscal va del 1 de julio al 31 de diciembre de 2024 (ejercicio corto). A partir de 2025, será del 1 de enero al 31 de diciembre.",
+      "La declaración de renta del ejercicio fiscal 2024 se presenta en abril de 2025, cubriendo todas las operaciones del 1 de enero al 31 de diciembre de 2024."
+    ]
+  },
+  {
+    "term": "Contribuyente Formal",
+    "category": "Fiscal",
+    "description": "Es una clasificación ante el Ministerio de Hacienda que se aplica a personas naturales con ingresos o activos por debajo de ciertos umbrales. Los contribuyentes formales tienen obligaciones simplificadas: no cobran IVA en sus ventas, no llevan libros de IVA, pero deben emitir facturas simplificadas y presentar una declaración anual resumida.",
+    "examples": [
+      "María tiene una tiendita con activos de $1,500 y ventas anuales de $4,000. Hacienda la clasifica como contribuyente formal: no cobra IVA pero debe llevar registro de ventas.",
+      "Si tus activos superan $2,285.71 o tus ventas anuales pasan de $5,714.28, dejás de ser contribuyente formal y te convertís en contribuyente de IVA con todas las obligaciones."
+    ]
+  },
+  {
+    "term": "Prescripción Tributaria",
+    "category": "Fiscal",
+    "description": "Es el plazo máximo que tiene el Ministerio de Hacienda para cobrarte impuestos que no pagaste o que pagaste de menos. Después de ese plazo, ya no te pueden exigir el pago. En El Salvador, el plazo general es de 3 años para impuestos declarados y hasta 6 años si no presentaste declaración o cometiste evasión.",
+    "examples": [
+      "Hacienda descubre que en 2020 pagaste $500 menos de IVA. Si ya pasaron más de 3 años y presentaste tu declaración, esa deuda prescribió y no te la pueden cobrar.",
+      "Si nunca presentaste la declaración de renta de 2019, Hacienda tiene hasta 6 años (hasta 2025) para cobrarte. Después de eso, prescribe."
+    ]
+  },
+  {
+    "term": "Actividad Económica (Código CIIU)",
+    "category": "Laboral",
+    "description": "Es la clasificación internacional que describe el tipo de negocio que tenés. CIIU significa Clasificación Industrial Internacional Uniforme. Se usa para registros ante Hacienda, alcaldías, ISSS y otras instituciones. Cada actividad tiene un código numérico que identifica tu rubro: comercio, servicios, manufactura, agricultura, etc.",
+    "examples": [
+      "Una tienda de ropa tiene código CIIU 4771 (venta al por menor de prendas de vestir). Este código lo usás al inscribirte en Hacienda y en la alcaldía.",
+      "Un desarrollador de software independiente usa código CIIU 6201 (actividades de programación informática). Lo necesitará para su inscripción como contribuyente."
+    ]
+  },
+  {
+    "term": "Salario Mínimo",
+    "category": "Laboral",
+    "description": "Es la cantidad mínima que la ley obliga a pagarle a un empleado por su trabajo. En El Salvador varía según el sector económico. El patrono no puede pagar menos del salario mínimo, incluso si el empleado acepta. Se actualiza periódicamente por decreto del gobierno.",
+    "examples": [
+      "El salario mínimo del sector comercio y servicios es $365 mensuales. Si contratás a un vendedor, no podés pagarle menos de eso aunque trabaje medio tiempo (en ese caso se calcula proporcional).",
+      "El sector de maquila textil tiene un salario mínimo diferente al de comercio. Cada sector tiene su propia tarifa mínima establecida por ley."
+    ]
+  },
+  {
+    "term": "Aguinaldo",
+    "category": "Laboral",
+    "description": "Es una prestación anual obligatoria que el patrono debe pagar a todos sus empleados entre el 12 y el 20 de diciembre de cada año. El monto depende de los años de antigüedad del trabajador. No pagarlo es una infracción laboral que puede generar multas y demandas.",
+    "examples": [
+      "Un empleado con 2 años trabajando en tu empresa tiene derecho a 15 días de salario como aguinaldo. Si gana $365/mes, su aguinaldo es aproximadamente $182.50.",
+      "Un trabajador con más de 10 años de antigüedad recibe 21 días de salario como aguinaldo. Es obligatorio aunque el negocio no haya tenido ganancias ese año."
+    ]
+  },
+  {
+    "term": "Vacaciones",
+    "category": "Laboral",
+    "description": "Es el derecho de todo trabajador a un período de descanso pagado después de un año continuo de trabajo. En El Salvador, el trabajador tiene derecho a 15 días de vacación remunerada, y el patrono debe pagarle esos días más un recargo del 30% sobre el salario ordinario de esos 15 días.",
+    "examples": [
+      "Tu empleado cumplió un año trabajando. Le corresponden 15 días de vacaciones pagadas. Si gana $365/mes, le pagás los 15 días ($182.50) más el 30% de recargo ($54.75) = $237.25 por sus vacaciones.",
+      "Las vacaciones deben tomarse dentro de los 6 meses siguientes al año cumplido. Si el empleado no las toma, el patrono debe pagarlas de todas formas."
+    ]
   }
 ];
