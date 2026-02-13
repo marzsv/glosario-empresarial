@@ -209,3 +209,28 @@ document.addEventListener('DOMContentLoaded', () => {
   setupModal();
   loadGuide();
 });
+
+// Font size controls
+let currentFontStep = 0;
+const FONT_STEPS = [0.8, 0.9, 1, 1.1, 1.25, 1.4];
+const DEFAULT_STEP = 2; // index of 1 (100%)
+
+(function initFontSize() {
+  const saved = localStorage.getItem('glossary-font-step');
+  currentFontStep = saved !== null ? parseInt(saved) : DEFAULT_STEP;
+  applyFontSize();
+})();
+
+function applyFontSize() {
+  document.documentElement.style.fontSize = (FONT_STEPS[currentFontStep] * 100) + '%';
+  localStorage.setItem('glossary-font-step', currentFontStep);
+}
+
+function adjustFontSize(dir) {
+  if (dir === 0) {
+    currentFontStep = DEFAULT_STEP;
+  } else {
+    currentFontStep = Math.max(0, Math.min(FONT_STEPS.length - 1, currentFontStep + dir));
+  }
+  applyFontSize();
+}
