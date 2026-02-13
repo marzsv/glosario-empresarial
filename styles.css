@@ -1,0 +1,151 @@
+/* ===== RESET & BASE ===== */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --primary:#1a56db;--primary-light:#e8effc;--primary-dark:#1042a3;
+  --accent:#0d9488;--accent-light:#ccfbf1;
+  --bg:#f8fafc;--surface:#fff;--border:#e2e8f0;
+  --text:#1e293b;--text-light:#64748b;--text-lighter:#94a3b8;
+  --legal:#7c3aed;--contable:#0891b2;--fiscal:#dc2626;
+  --registral:#ea580c;--laboral:#16a34a;--institucional:#6366f1;
+  --radius:12px;--shadow:0 1px 3px rgba(0,0,0,.08),0 1px 2px rgba(0,0,0,.06);
+  --shadow-lg:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -4px rgba(0,0,0,.1);
+}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:'Segoe UI',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+a{color:var(--primary);text-decoration:none}
+
+/* ===== HEADER ===== */
+.header{background:linear-gradient(135deg,var(--primary) 0%,#7c3aed 100%);color:#fff;padding:2.5rem 1rem 2rem;text-align:center;position:relative;overflow:hidden}
+.header::after{content:'';position:absolute;bottom:-40px;left:0;right:0;height:80px;background:var(--bg);border-radius:50% 50% 0 0}
+.header h1{font-size:2rem;font-weight:800;margin-bottom:.4rem;letter-spacing:-.5px}
+.header p{opacity:.85;font-size:1.05rem;max-width:600px;margin:0 auto}
+.header .stats{display:flex;gap:1.5rem;justify-content:center;margin-top:1.2rem;flex-wrap:wrap}
+.header .stat{background:rgba(255,255,255,.18);border-radius:8px;padding:.4rem 1rem;font-size:.85rem;backdrop-filter:blur(4px)}
+
+/* ===== SEARCH ===== */
+.search-wrap{max-width:700px;margin:-1.5rem auto 1.5rem;padding:0 1rem;position:relative;z-index:2}
+.search-wrap input{width:100%;padding:1rem 1rem 1rem 3rem;border:2px solid var(--border);border-radius:var(--radius);font-size:1rem;background:var(--surface);box-shadow:var(--shadow-lg);transition:border .2s}
+.search-wrap input:focus{outline:none;border-color:var(--primary)}
+.search-wrap .icon{position:absolute;left:1.8rem;top:50%;transform:translateY(-50%);color:var(--text-lighter);font-size:1.2rem}
+
+/* ===== TABS ===== */
+.tabs{display:flex;gap:.5rem;justify-content:center;flex-wrap:wrap;padding:0 1rem;margin-bottom:1.5rem}
+.tab{padding:.5rem 1.1rem;border-radius:20px;border:1.5px solid var(--border);background:var(--surface);cursor:pointer;font-size:.85rem;font-weight:600;transition:all .2s;color:var(--text-light)}
+.tab:hover{border-color:var(--primary);color:var(--primary)}
+.tab.active{background:var(--primary);color:#fff;border-color:var(--primary)}
+.tab[data-cat="Legal"]{--cat-color:var(--legal)}.tab[data-cat="Legal"].active{background:var(--legal);border-color:var(--legal)}
+.tab[data-cat="Contable"]{--cat-color:var(--contable)}.tab[data-cat="Contable"].active{background:var(--contable);border-color:var(--contable)}
+.tab[data-cat="Fiscal"]{--cat-color:var(--fiscal)}.tab[data-cat="Fiscal"].active{background:var(--fiscal);border-color:var(--fiscal)}
+.tab[data-cat="Registral"]{--cat-color:var(--registral)}.tab[data-cat="Registral"].active{background:var(--registral);border-color:var(--registral)}
+.tab[data-cat="Laboral"]{--cat-color:var(--laboral)}.tab[data-cat="Laboral"].active{background:var(--laboral);border-color:var(--laboral)}
+.tab[data-cat="Institucional"]{--cat-color:var(--institucional)}.tab[data-cat="Institucional"].active{background:var(--institucional);border-color:var(--institucional)}
+
+/* ===== CONTAINER ===== */
+.container{max-width:900px;margin:0 auto;padding:0 1rem 3rem}
+.section-title{font-size:1.3rem;font-weight:700;margin:2rem 0 1rem;padding-bottom:.5rem;border-bottom:2px solid var(--border);display:flex;align-items:center;gap:.5rem}
+.count-badge{background:var(--primary-light);color:var(--primary);font-size:.75rem;padding:2px 8px;border-radius:10px;font-weight:700}
+.no-results{text-align:center;padding:3rem 1rem;color:var(--text-light);font-size:1.1rem}
+
+/* ===== CARDS ===== */
+.card{background:var(--surface);border:1.5px solid var(--border);border-radius:var(--radius);margin-bottom:.75rem;overflow:hidden;transition:box-shadow .2s,border-color .2s}
+.card:hover{box-shadow:var(--shadow-lg);border-color:#cbd5e1}
+.card-header{padding:1rem 1.2rem;cursor:pointer;display:flex;align-items:center;gap:.75rem;user-select:none}
+.card-header .arrow{transition:transform .3s;color:var(--text-lighter);flex-shrink:0;font-size:.8rem}
+.card.open .card-header .arrow{transform:rotate(90deg)}
+.card-header .cat-dot{width:10px;height:10px;border-radius:50%;flex-shrink:0}
+.card-header h3{font-size:1rem;font-weight:700;flex:1}
+.card-header .cat-label{font-size:.7rem;text-transform:uppercase;letter-spacing:.5px;font-weight:700;padding:2px 8px;border-radius:6px;flex-shrink:0}
+.cat-Legal .cat-dot,.cat-Legal .cat-label{background:var(--legal);color:#fff}
+.cat-Contable .cat-dot,.cat-Contable .cat-label{background:var(--contable);color:#fff}
+.cat-Fiscal .cat-dot,.cat-Fiscal .cat-label{background:var(--fiscal);color:#fff}
+.cat-Registral .cat-dot,.cat-Registral .cat-label{background:var(--registral);color:#fff}
+.cat-Laboral .cat-dot,.cat-Laboral .cat-label{background:var(--laboral);color:#fff}
+.cat-Institucional .cat-dot,.cat-Institucional .cat-label{background:var(--institucional);color:#fff}
+.card-body{display:none;padding:0 1.2rem 1.2rem;border-top:1px solid var(--border)}
+.card.open .card-body{display:block}
+.card-body .desc{margin-top:.8rem;color:var(--text);line-height:1.7}
+.card-body .examples{margin-top:1rem}
+.card-body .examples h4{font-size:.8rem;text-transform:uppercase;letter-spacing:.5px;color:var(--text-lighter);margin-bottom:.5rem}
+.card-body .example{background:var(--bg);border-left:3px solid var(--primary);padding:.6rem 1rem;margin-bottom:.5rem;border-radius:0 8px 8px 0;font-size:.9rem;color:var(--text)}
+
+/* ===== DIAGRAMS SECTION ===== */
+.diagrams{max-width:900px;margin:0 auto;padding:0 1rem 3rem}
+.diagram-card{background:var(--surface);border:1.5px solid var(--border);border-radius:var(--radius);padding:1.5rem;margin-bottom:1.5rem;box-shadow:var(--shadow)}
+.diagram-card h3{font-size:1.15rem;font-weight:700;margin-bottom:1rem;text-align:center;color:var(--primary-dark)}
+.diagram-card svg{width:100%;height:auto;display:block}
+
+/* Flow diagram */
+.flow-step{display:flex;align-items:center;gap:.75rem;margin-bottom:.5rem}
+.flow-num{width:36px;height:36px;border-radius:50%;background:var(--primary);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.85rem;flex-shrink:0}
+.flow-content{flex:1;background:var(--primary-light);padding:.6rem 1rem;border-radius:8px;font-size:.9rem}
+.flow-arrow{text-align:center;color:var(--primary);font-size:1.2rem;margin:.1rem 0 .1rem 14px}
+
+/* Comparison table */
+.comp-table{width:100%;border-collapse:collapse;font-size:.85rem}
+.comp-table th{background:var(--primary);color:#fff;padding:.6rem .5rem;text-align:left;font-weight:700}
+.comp-table td{padding:.5rem;border-bottom:1px solid var(--border);vertical-align:top}
+.comp-table tr:nth-child(even){background:var(--bg)}
+.comp-table .check{color:var(--accent);font-weight:700}
+.comp-table .cross{color:var(--fiscal);font-weight:700}
+
+/* Equation diagram */
+.eq-wrap{display:flex;align-items:center;justify-content:center;gap:1rem;flex-wrap:wrap;padding:1rem 0}
+.eq-box{padding:1.2rem 1.5rem;border-radius:var(--radius);text-align:center;min-width:120px}
+.eq-box.activo{background:#dbeafe;border:2px solid #3b82f6}
+.eq-box.pasivo{background:#fce7f3;border:2px solid #ec4899}
+.eq-box.patrimonio{background:#d1fae5;border:2px solid #10b981}
+.eq-box .label{font-size:.75rem;text-transform:uppercase;letter-spacing:.5px;font-weight:700;color:var(--text-light)}
+.eq-box .val{font-size:1.5rem;font-weight:800;margin-top:.2rem}
+.eq-sign{font-size:2rem;font-weight:800;color:var(--text-light)}
+
+/* Bar charts */
+.bar-group{margin-bottom:1rem}
+.bar-label{font-size:.85rem;font-weight:600;margin-bottom:.3rem;display:flex;justify-content:space-between}
+.bar-track{height:28px;background:var(--bg);border-radius:6px;overflow:hidden;border:1px solid var(--border)}
+.bar-fill{height:100%;border-radius:6px;display:flex;align-items:center;padding-left:.5rem;color:#fff;font-size:.75rem;font-weight:700;transition:width .6s}
+
+/* Cargas patronales */
+.cargas-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1rem;margin-top:1rem}
+.carga-item{text-align:center;padding:1rem;border-radius:var(--radius);background:var(--bg);border:1px solid var(--border)}
+.carga-item .pct{font-size:1.8rem;font-weight:800}
+.carga-item .name{font-size:.8rem;font-weight:600;margin-top:.3rem;color:var(--text-light)}
+.carga-total{text-align:center;margin-top:1rem;padding:1rem;background:var(--primary);color:#fff;border-radius:var(--radius);font-size:1.1rem;font-weight:700}
+
+/* Capital suscrito vs pagado */
+.cap-timeline{position:relative;padding-left:30px;margin-top:1rem}
+.cap-timeline::before{content:'';position:absolute;left:14px;top:0;bottom:0;width:3px;background:var(--border)}
+.cap-event{position:relative;margin-bottom:1.5rem;padding-left:1.5rem}
+.cap-event::before{content:'';position:absolute;left:-20px;top:6px;width:14px;height:14px;border-radius:50%;border:3px solid var(--primary);background:#fff;z-index:1}
+.cap-event.done::before{background:var(--primary)}
+.cap-event h4{font-size:.9rem;font-weight:700}
+.cap-event p{font-size:.85rem;color:var(--text-light)}
+
+/* Umbrales diagram */
+.threshold{display:flex;align-items:stretch;margin-bottom:.6rem;border-radius:8px;overflow:hidden;border:1px solid var(--border)}
+.threshold .amt{min-width:130px;padding:.6rem .8rem;font-weight:800;font-size:.85rem;display:flex;align-items:center;color:#fff}
+.threshold .obligations{flex:1;padding:.6rem .8rem;font-size:.82rem;background:var(--surface)}
+.threshold:nth-child(1) .amt{background:#22c55e}
+.threshold:nth-child(2) .amt{background:#f59e0b}
+.threshold:nth-child(3) .amt{background:#ef4444}
+.threshold:nth-child(4) .amt{background:#7c3aed}
+
+/* NAV */
+.nav-tabs{display:flex;gap:0;justify-content:center;margin-bottom:2rem;border-bottom:2px solid var(--border);max-width:900px;margin-left:auto;margin-right:auto;padding:0 1rem}
+.nav-tab{padding:.75rem 1.5rem;font-weight:700;color:var(--text-light);cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-2px;transition:all .2s;font-size:.95rem}
+.nav-tab:hover{color:var(--primary)}
+.nav-tab.active{color:var(--primary);border-bottom-color:var(--primary)}
+
+.view{display:none}.view.active{display:block}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:640px){
+  .header h1{font-size:1.5rem}
+  .header .stats{gap:.75rem}
+  .comp-table{font-size:.75rem}
+  .eq-wrap{gap:.5rem}
+  .eq-box{padding:.8rem 1rem;min-width:80px}
+  .eq-box .val{font-size:1.2rem}
+  .eq-sign{font-size:1.5rem}
+  .nav-tab{padding:.6rem .8rem;font-size:.82rem}
+  .threshold .amt{min-width:100px;font-size:.75rem}
+}
