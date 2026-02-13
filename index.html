@@ -16,6 +16,7 @@
     <div class="stat">📖 <span id="total-count">0</span> términos</div>
     <div class="stat">🏷️ <span id="cat-count">0</span> categorías</div>
     <div class="stat">📊 7 diagramas</div>
+    <div class="stat">📄 1 guía consolidada</div>
   </div>
 </div>
 
@@ -29,6 +30,7 @@
 <div class="nav-tabs">
   <div class="nav-tab active" data-view="view-glossary">📖 Glosario</div>
   <div class="nav-tab" data-view="view-diagrams">📊 Diagramas</div>
+  <div class="nav-tab" data-view="view-guide">📄 Guía</div>
 </div>
 
 <!-- VIEW: GLOSSARY -->
@@ -205,6 +207,21 @@
       </div>
     </div>
 
+  </div>
+</div>
+
+<!-- VIEW: GUIDE -->
+<div id="view-guide" class="view">
+  <div class="guide-container" id="guide-container">
+    <div class="no-results">Cargando guía...</div>
+  </div>
+</div>
+
+<!-- TERM MODAL -->
+<div id="term-modal" class="modal-overlay" style="display:none">
+  <div class="modal-content">
+    <button class="modal-close" id="modal-close">&times;</button>
+    <div id="modal-body"></div>
   </div>
 </div>
 

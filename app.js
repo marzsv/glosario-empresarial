@@ -118,13 +118,107 @@ function animateBars(){
   },500);
 }
 
+// ===== TERM MODAL =====
+let termsRaw = []; // raw terms.json data
+
+function findTermData(termName) {
+  const lower = termName.toLowerCase();
+  return termsRaw.find(t => t.term.toLowerCase() === lower);
+}
+
+function getCatColor(cat) {
+  return catColors[cat] || '#64748b';
+}
+
+function openTermModal(termName) {
+  const t = findTermData(termName);
+  if (!t) return;
+  const modal = document.getElementById('term-modal');
+  const body = document.getElementById('modal-body');
+
+  let html = `<div class="modal-term-name">${t.term}</div>`;
+  html += `<span class="modal-cat-badge" style="background:${getCatColor(t.category)}">${t.category}</span>`;
+  html += `<p class="modal-desc">${t.description}</p>`;
+  if (t.examples && t.examples.length) {
+    html += `<div class="modal-examples"><h4>📌 Ejemplos prácticos</h4>`;
+    t.examples.forEach(e => { html += `<div class="modal-example">${e}</div>`; });
+    html += `</div>`;
+  }
+  // Check if term is related to a diagram section
+  const diagramTerms = {
+    'Comerciante Individual': true, 'EIRL (Empresa Individual de Responsabilidad Limitada)': true,
+    'SAS (Sociedad por Acciones Simplificada)': true, 'Ecuación Contable': true,
+    'Capital Social': true, 'Capital Suscrito': true, 'Capital Pagado': true,
+    'Activo': true, 'Pasivo': true, 'Patrimonio': true, 'Balance General': true,
+    'ISSS (Instituto Salvadoreño del Seguro Social)': true, 'AFP (Administradora de Fondos de Pensiones)': true,
+    'INSAFORP (Instituto Salvadoreño de Formación Profesional)': true, 'Cargas Patronales': true,
+    'NIT (Número de Identificación Tributaria)': true, 'NRC (Número de Registro de Contribuyente)': true,
+    'Matrícula de Comercio': true, 'Solvencia Estadística': true
+  };
+  if (diagramTerms[t.term]) {
+    html += `<button class="modal-diagram-btn" onclick="goToDiagrams()">📊 Ver diagrama relacionado</button>`;
+  }
+
+  body.innerHTML = html;
+  modal.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+}
+
+function closeTermModal() {
+  document.getElementById('term-modal').style.display = 'none';
+  document.body.style.overflow = '';
+}
+
+function goToDiagrams() {
+  closeTermModal();
+  document.querySelectorAll('.nav-tab').forEach(n => n.classList.remove('active'));
+  document.querySelector('.nav-tab[data-view="view-diagrams"]').classList.add('active');
+  document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+  document.getElementById('view-diagrams').classList.add('active');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Setup modal close handlers
+function setupModal() {
+  document.getElementById('modal-close').onclick = closeTermModal;
+  document.getElementById('term-modal').onclick = (e) => {
+    if (e.target === document.getElementById('term-modal')) closeTermModal();
+  };
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeTermModal();
+  });
+}
+
+// ===== GUIDE LOADING =====
+function loadGuide() {
+  fetch('./guide-content.html')
+    .then(r => r.text())
+    .then(html => {
+      document.getElementById('guide-container').innerHTML = html;
+      // Attach click handlers to term links
+      document.querySelectorAll('.term-link').forEach(el => {
+        el.addEventListener('click', (e) => {
+          e.preventDefault();
+          openTermModal(el.dataset.term);
+        });
+      });
+    })
+    .catch(err => {
+      console.error('Error loading guide:', err);
+      document.getElementById('guide-container').innerHTML = '<div class="no-results">❌ Error cargando la guía.</div>';
+    });
+}
+
 // Load terms from JSON and initialize
 document.addEventListener('DOMContentLoaded', () => {
   fetch('./terms.json')
     .then(r => r.json())
     .then(data => {
+      termsRaw = data;
       terms = mapTerms(data);
       init();
+      setupModal();
+      loadGuide();
     })
     .catch(err => {
       console.error('Error loading terms:', err);
