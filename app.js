@@ -52,6 +52,7 @@ function init(){
       t.classList.add('active');
       document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
       document.getElementById(t.dataset.view).classList.add('active');
+      if (t.dataset.view === 'view-guide') animateBars();
     };
   });
 
@@ -156,7 +157,7 @@ function openTermModal(termName) {
     'Matrícula de Comercio': true, 'Solvencia Estadística': true
   };
   if (diagramTerms[t.term]) {
-    html += `<button class="modal-diagram-btn" onclick="goToDiagrams()">📊 Ver diagrama relacionado</button>`;
+    html += `<button class="modal-diagram-btn" onclick="goToGuide()">📄 Ver en la guía</button>`;
   }
 
   body.innerHTML = html;
@@ -169,12 +170,12 @@ function closeTermModal() {
   document.body.style.overflow = '';
 }
 
-function goToDiagrams() {
+function goToGuide() {
   closeTermModal();
   document.querySelectorAll('.nav-tab').forEach(n => n.classList.remove('active'));
-  document.querySelector('.nav-tab[data-view="view-diagrams"]').classList.add('active');
+  document.querySelector('.nav-tab[data-view="view-guide"]').classList.add('active');
   document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
-  document.getElementById('view-diagrams').classList.add('active');
+  document.getElementById('view-guide').classList.add('active');
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 

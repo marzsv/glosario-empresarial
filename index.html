@@ -15,8 +15,7 @@
   <div class="stats">
     <div class="stat">📖 <span id="total-count">0</span> términos</div>
     <div class="stat">🏷️ <span id="cat-count">0</span> categorías</div>
-    <div class="stat">📊 7 diagramas</div>
-    <div class="stat">📄 1 guía consolidada</div>
+    <div class="stat">📄 1 guía con 7 diagramas</div>
   </div>
 </div>
 
@@ -29,7 +28,6 @@
 <!-- NAVIGATION -->
 <div class="nav-tabs">
   <div class="nav-tab active" data-view="view-glossary">📖 Glosario</div>
-  <div class="nav-tab" data-view="view-diagrams">📊 Diagramas</div>
   <div class="nav-tab" data-view="view-guide">📄 Guía</div>
 </div>
 
@@ -38,175 +36,6 @@
   <div class="container">
     <div id="tabs" class="tabs"></div>
     <div id="glossary"></div>
-  </div>
-</div>
-
-<!-- VIEW: DIAGRAMS -->
-<div id="view-diagrams" class="view">
-  <div class="diagrams">
-
-    <!-- 1. FLUJO DE REGISTRO -->
-    <div class="diagram-card">
-      <h3>🔄 Proceso de Registro Paso a Paso (Comerciante Individual ≥ $12,000)</h3>
-      <div class="flow-step"><div class="flow-num">1</div><div class="flow-content"><strong>Obtener NIT</strong> — DGII o portal en línea. $1.67, inmediato. El DUI ya funciona como NIT.</div></div>
-      <div class="flow-arrow">↓</div>
-      <div class="flow-step"><div class="flow-num">2</div><div class="flow-content"><strong>Inscribirse en IVA (NRC)</strong> — Ministerio de Hacienda. Gratis, mismo día. Obligatorio si activo &gt; $2,285.71.</div></div>
-      <div class="flow-arrow">↓</div>
-      <div class="flow-step"><div class="flow-num">3</div><div class="flow-content"><strong>Depositar Balance Inicial</strong> — CNR (Registro de Comercio). $17.14. Firmado por contador si activo ≥ $12,000.</div></div>
-      <div class="flow-arrow">↓</div>
-      <div class="flow-step"><div class="flow-num">4</div><div class="flow-content"><strong>Solicitar Matrícula de Comercio</strong> — CNR. ~$91.43 (varía según activo). 3-5 días hábiles.</div></div>
-      <div class="flow-arrow">↓</div>
-      <div class="flow-step"><div class="flow-num">5</div><div class="flow-content"><strong>Inscribirse en la Alcaldía</strong> — Presentar DUI, NIT, balance. Gratis en San Salvador. ~1 día.</div></div>
-      <div class="flow-arrow">↓</div>
-      <div class="flow-step"><div class="flow-num">6</div><div class="flow-content"><strong>Obtener Solvencia Estadística</strong> — solvencias.bcr.gob.sv. $5-$21. 1-8 horas en línea.</div></div>
-      <div style="text-align:center;margin-top:1rem;padding:.8rem;background:#d1fae5;border-radius:8px;font-weight:700;color:#065f46">✅ ¡Negocio formalizado! Tiempo total: ~5 días hábiles vía MiEmpresa.gob.sv</div>
-    </div>
-
-    <!-- 2. COMPARATIVA -->
-    <div class="diagram-card">
-      <h3>⚖️ Comparativa: Comerciante Individual vs EIRL vs SAS</h3>
-      <div style="overflow-x:auto">
-      <table class="comp-table">
-        <tr><th>Aspecto</th><th>Comerciante Individual</th><th>EIRL</th><th>SAS Unipersonal</th></tr>
-        <tr><td><strong>Responsabilidad</strong></td><td class="cross">Ilimitada ⚠️</td><td class="check">Limitada ✓</td><td class="check">Limitada ✓</td></tr>
-        <tr><td><strong>Capital mínimo</strong></td><td>No hay</td><td>Variable</td><td><strong>$1.00</strong></td></tr>
-        <tr><td><strong>Persona jurídica</strong></td><td class="cross">No ✗</td><td class="check">Sí ✓</td><td class="check">Sí ✓</td></tr>
-        <tr><td><strong>Escritura pública</strong></td><td>No</td><td class="cross">Sí (costosa) ✗</td><td class="check">No necesita ✓</td></tr>
-        <tr><td><strong>Auditor externo</strong></td><td>Solo si activo ≥ $34,000</td><td class="cross">Obligatorio ✗</td><td class="check">No (si microempresa) ✓</td></tr>
-        <tr><td><strong>Publicación en diarios</strong></td><td>No</td><td class="cross">Sí (D.O. + periódico) ✗</td><td class="check">No ✓</td></tr>
-        <tr><td><strong>Constitución en línea</strong></td><td>Parcial</td><td class="cross">No ✗</td><td class="check">100% en línea ✓</td></tr>
-        <tr><td><strong>Complejidad</strong></td><td style="color:#16a34a;font-weight:700">Baja</td><td style="color:#dc2626;font-weight:700">Alta</td><td style="color:#16a34a;font-weight:700">Baja</td></tr>
-        <tr><td><strong>Costo aproximado</strong></td><td>$170 - $200</td><td>&gt; $1,000</td><td><strong>Desde $1</strong></td></tr>
-      </table>
-      </div>
-      <div style="margin-top:1rem;padding:.8rem;background:#eff6ff;border-radius:8px;text-align:center;font-size:.9rem;color:#1e40af">
-        💡 <strong>Recomendación:</strong> La SAS unipersonal combina lo mejor: responsabilidad limitada + constitución digital + costo mínimo
-      </div>
-    </div>
-
-    <!-- 3. ECUACIÓN CONTABLE -->
-    <div class="diagram-card">
-      <h3>📐 La Ecuación Contable Fundamental</h3>
-      <div class="eq-wrap">
-        <div class="eq-box activo"><div class="label">Activo</div><div class="val" style="color:#3b82f6">$1,501</div><div style="font-size:.75rem;color:#64748b;margin-top:.3rem">Lo que TIENE<br>la empresa</div></div>
-        <div class="eq-sign">=</div>
-        <div class="eq-box pasivo"><div class="label">Pasivo</div><div class="val" style="color:#ec4899">$0</div><div style="font-size:.75rem;color:#64748b;margin-top:.3rem">Lo que DEBE<br>a terceros</div></div>
-        <div class="eq-sign">+</div>
-        <div class="eq-box patrimonio"><div class="label">Patrimonio</div><div class="val" style="color:#10b981">$1,501</div><div style="font-size:.75rem;color:#64748b;margin-top:.3rem">Lo que ES<br>de los dueños</div></div>
-      </div>
-      <div style="margin-top:1rem;background:#f8fafc;border-radius:8px;padding:1rem;font-size:.85rem">
-        <strong>Ejemplo real:</strong> SAS con $1 en efectivo + computadora $1,000 + mobiliario $500, sin deudas<br>
-        <div style="display:flex;gap:1rem;margin-top:.5rem;flex-wrap:wrap">
-          <div style="flex:1;min-width:200px;background:#dbeafe;padding:.5rem;border-radius:6px"><strong>Activo:</strong> Efectivo $1 + Equipo $1,000 + Mobiliario $500 = <strong>$1,501</strong></div>
-          <div style="flex:1;min-width:200px;background:#d1fae5;padding:.5rem;border-radius:6px"><strong>Patrimonio:</strong> Capital social = <strong>$1,501</strong> (1,501 acciones × $1)</div>
-        </div>
-        <div style="margin-top:.5rem;background:#fce7f3;padding:.5rem;border-radius:6px"><strong>Alternativa:</strong> Si los bienes entran como préstamo → Pasivo $1,500 + Patrimonio $1 = Activo $1,501</div>
-      </div>
-    </div>
-
-    <!-- 4. UMBRALES -->
-    <div class="diagram-card">
-      <h3>📏 Umbrales de Activos y sus Obligaciones</h3>
-      <div class="threshold"><div class="amt">< $2,286</div><div class="obligations">Solo NIT + inscripción en alcaldía. Sin IVA, sin matrícula, sin contabilidad formal. <strong>Mínima carga regulatoria.</strong></div></div>
-      <div class="threshold"><div class="amt">$2,286 – $11,999</div><div class="obligations">NIT + NRC (IVA obligatorio) + Libros de IVA. Sin matrícula, sin contabilidad formal. Libro sencillo de ingresos/egresos.</div></div>
-      <div class="threshold"><div class="amt">$12,000 – $33,999</div><div class="obligations">Todo lo anterior + Matrícula de comercio + Contabilidad formal con contador autorizado + Balance firmado por contador + Solvencia estadística.</div></div>
-      <div class="threshold"><div class="amt">≥ $34,000</div><div class="obligations">Todo lo anterior + <strong>Auditor externo obligatorio</strong>. Balance certificado por auditor. Dictamen fiscal si activo &gt; $1,142,857.</div></div>
-      <div style="margin-top:1rem;padding:.8rem;background:#fef3c7;border-radius:8px;font-size:.85rem;color:#92400e">
-        ⚠️ <strong>Importante para SAS:</strong> Estos umbrales se basan en el <strong>activo total</strong> del balance, NO en el capital social. Una SAS con $1 de capital puede tener $50,000 en activos y caer en el umbral más alto. Además, toda SAS debe inscribirse en IVA obligatoriamente, sin importar el activo.
-      </div>
-    </div>
-
-    <!-- 5. CARGAS PATRONALES -->
-    <div class="diagram-card">
-      <h3>👥 Cargas Patronales: Lo que Realmente Cuesta un Empleado</h3>
-      <div class="cargas-grid">
-        <div class="carga-item"><div class="pct" style="color:#dc2626">7.50%</div><div class="name">ISSS</div><div style="font-size:.7rem;color:#94a3b8;margin-top:.3rem">Tope: $75/mes</div></div>
-        <div class="carga-item"><div class="pct" style="color:#7c3aed">8.75%</div><div class="name">AFP</div><div style="font-size:.7rem;color:#94a3b8;margin-top:.3rem">Sin tope</div></div>
-        <div class="carga-item"><div class="pct" style="color:#ea580c">1.00%</div><div class="name">INSAFORP</div><div style="font-size:.7rem;color:#94a3b8;margin-top:.3rem">≥ 5 empleados</div></div>
-      </div>
-      <div class="carga-total">Total cargas patronales: 17.25% del salario</div>
-      <div style="margin-top:1rem">
-        <div style="font-size:.9rem;font-weight:600;margin-bottom:.5rem">Ejemplo: Empleado con salario mínimo comercio ($365/mes)</div>
-        <div class="bar-group">
-          <div class="bar-label"><span>Salario base</span><span>$365.00</span></div>
-          <div class="bar-track"><div class="bar-fill" style="width:0;background:#3b82f6" data-width="85%">$365</div></div>
-        </div>
-        <div class="bar-group">
-          <div class="bar-label"><span>+ ISSS patronal (7.50%)</span><span>$27.38</span></div>
-          <div class="bar-track"><div class="bar-fill" style="width:0;background:#dc2626" data-width="6.4%">$27</div></div>
-        </div>
-        <div class="bar-group">
-          <div class="bar-label"><span>+ AFP patronal (8.75%)</span><span>$31.94</span></div>
-          <div class="bar-track"><div class="bar-fill" style="width:0;background:#7c3aed" data-width="7.4%">$32</div></div>
-        </div>
-        <div class="bar-group">
-          <div class="bar-label"><span>+ INSAFORP (1%)</span><span>$3.65</span></div>
-          <div class="bar-track"><div class="bar-fill" style="width:0;background:#ea580c" data-width="0.9%">$4</div></div>
-        </div>
-        <div class="bar-group">
-          <div class="bar-label"><span><strong>= Costo real del empleado</strong></span><span><strong>$427.97</strong></span></div>
-          <div class="bar-track"><div class="bar-fill" style="width:0;background:#10b981" data-width="100%"><strong>$427.97</strong></div></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 6. CAPITAL SUSCRITO VS PAGADO -->
-    <div class="diagram-card">
-      <h3>💰 Capital Suscrito vs Capital Pagado: Línea de Tiempo</h3>
-      <div class="cap-timeline">
-        <div class="cap-event done">
-          <h4>📝 Día 0 — Constitución</h4>
-          <p>Se define el capital suscrito: $5,000 (100% comprometido). Se pagan $500 en efectivo. <br><strong>Suscrito: $5,000 | Pagado: $500</strong></p>
-        </div>
-        <div class="cap-event done">
-          <h4>📦 Mes 6 — Primer aporte adicional</h4>
-          <p>El negocio genera ingresos. El accionista aporta $1,500 más. <br><strong>Suscrito: $5,000 | Pagado: $2,000</strong></p>
-        </div>
-        <div class="cap-event done">
-          <h4>💻 Mes 12 — Aporte en especie</h4>
-          <p>Transfiere equipo de cómputo valorado en $1,000. <br><strong>Suscrito: $5,000 | Pagado: $3,000</strong></p>
-        </div>
-        <div class="cap-event">
-          <h4>⏰ Mes 24 — Fecha límite</h4>
-          <p>Debe pagar los $2,000 restantes. Si no paga: el capital se reduce a $3,000 (lo efectivamente pagado). Si lo pagado fuera &lt; $1, la SAS se disuelve.</p>
-        </div>
-      </div>
-      <div style="margin-top:.5rem;padding:.8rem;background:#fef3c7;border-radius:8px;font-size:.85rem;color:#92400e">
-        ⚠️ <strong>Regla clave:</strong> El 100% debe SUSCRIBIRSE al constituir, pero el PAGO puede diferirse hasta 2 años.
-      </div>
-    </div>
-
-    <!-- 7. FORMAS DE APORTE -->
-    <div class="diagram-card">
-      <h3>🎨 7 Formas de Aportar Capital a una SAS</h3>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:.8rem;margin-top:.5rem">
-        <div style="background:#eff6ff;padding:1rem;border-radius:8px;text-align:center;border:1px solid #bfdbfe">
-          <div style="font-size:1.5rem">💵</div><strong>Efectivo</strong><div style="font-size:.8rem;color:#64748b;margin-top:.3rem">Billetes y monedas</div>
-        </div>
-        <div style="background:#f0fdf4;padding:1rem;border-radius:8px;text-align:center;border:1px solid #bbf7d0">
-          <div style="font-size:1.5rem">🏦</div><strong>Transferencia bancaria</strong><div style="font-size:.8rem;color:#64748b;margin-top:.3rem">Desde cualquier banco</div>
-        </div>
-        <div style="background:#fdf4ff;padding:1rem;border-radius:8px;text-align:center;border:1px solid #f5d0fe">
-          <div style="font-size:1.5rem">📱</div><strong>Billeteras electrónicas</strong><div style="font-size:.8rem;color:#64748b;margin-top:.3rem">Chivo Wallet y otras</div>
-        </div>
-        <div style="background:#fff7ed;padding:1rem;border-radius:8px;text-align:center;border:1px solid #fed7aa">
-          <div style="font-size:1.5rem">💻</div><strong>Bienes muebles</strong><div style="font-size:.8rem;color:#64748b;margin-top:.3rem">Computadoras, equipo, vehículos</div>
-        </div>
-        <div style="background:#fef2f2;padding:1rem;border-radius:8px;text-align:center;border:1px solid #fecaca">
-          <div style="font-size:1.5rem">🏠</div><strong>Bienes inmuebles</strong><div style="font-size:.8rem;color:#64748b;margin-top:.3rem">Terrenos, locales</div>
-        </div>
-        <div style="background:#f5f3ff;padding:1rem;border-radius:8px;text-align:center;border:1px solid #ddd6fe">
-          <div style="font-size:1.5rem">💡</div><strong>Propiedad intelectual</strong><div style="font-size:.8rem;color:#64748b;margin-top:.3rem">Marcas, patentes, software</div>
-        </div>
-        <div style="background:#ecfdf5;padding:1rem;border-radius:8px;text-align:center;border:1px solid #a7f3d0">
-          <div style="font-size:1.5rem">🔧</div><strong>Trabajo (industria)</strong><div style="font-size:.8rem;color:#64748b;margin-top:.3rem">Conocimientos, servicios</div>
-        </div>
-      </div>
-      <div style="margin-top:1rem;text-align:center;font-size:.85rem;color:#64748b">
-        La lista es <strong>abierta</strong> (Art. 305-D dice "entre otros") — los accionistas definen libremente las reglas de pago
-      </div>
-    </div>
-
   </div>
 </div>
 
@@ -257,6 +86,27 @@
         <li>Constitución 100% en línea mediante <span class="term-link" data-term="CreaEmpresa.gob.sv">CreaEmpresa.gob.sv</span>, sin <span class="term-link" data-term="Escritura Pública">escritura pública</span> ni notario</li>
       </ul>
       <p>La <a class="term-link" data-term="Razón Social">razón social</a> debe incluir "SAS" al final. Según datos del <span class="term-link" data-term="CNR (Centro Nacional de Registros)">CNR</span>, más de 3,800 SAS se constituyeron desde febrero 2024, y el 70% lo hizo con un capital de apenas $1.00.</p>
+    </div>
+    <!-- DIAGRAMA: Comparativa -->
+    <div class="diagram-card">
+      <h3>⚖️ Comparativa: Comerciante Individual vs EIRL vs SAS</h3>
+      <div style="overflow-x:auto">
+      <table class="comp-table">
+        <tr><th>Aspecto</th><th>Comerciante Individual</th><th>EIRL</th><th>SAS Unipersonal</th></tr>
+        <tr><td><strong>Responsabilidad</strong></td><td class="cross">Ilimitada ⚠️</td><td class="check">Limitada ✓</td><td class="check">Limitada ✓</td></tr>
+        <tr><td><strong>Capital mínimo</strong></td><td>No hay</td><td>Variable</td><td><strong>$1.00</strong></td></tr>
+        <tr><td><strong>Persona jurídica</strong></td><td class="cross">No ✗</td><td class="check">Sí ✓</td><td class="check">Sí ✓</td></tr>
+        <tr><td><strong>Escritura pública</strong></td><td>No</td><td class="cross">Sí (costosa) ✗</td><td class="check">No necesita ✓</td></tr>
+        <tr><td><strong>Auditor externo</strong></td><td>Solo si activo ≥ $34,000</td><td class="cross">Obligatorio ✗</td><td class="check">No (si microempresa) ✓</td></tr>
+        <tr><td><strong>Publicación en diarios</strong></td><td>No</td><td class="cross">Sí (D.O. + periódico) ✗</td><td class="check">No ✓</td></tr>
+        <tr><td><strong>Constitución en línea</strong></td><td>Parcial</td><td class="cross">No ✗</td><td class="check">100% en línea ✓</td></tr>
+        <tr><td><strong>Complejidad</strong></td><td style="color:#16a34a;font-weight:700">Baja</td><td style="color:#dc2626;font-weight:700">Alta</td><td style="color:#16a34a;font-weight:700">Baja</td></tr>
+        <tr><td><strong>Costo aproximado</strong></td><td>$170 - $200</td><td>&gt; $1,000</td><td><strong>Desde $1</strong></td></tr>
+      </table>
+      </div>
+      <div style="margin-top:1rem;padding:.8rem;background:#eff6ff;border-radius:8px;text-align:center;font-size:.9rem;color:#1e40af">
+        💡 <strong>Recomendación:</strong> La SAS unipersonal combina lo mejor: responsabilidad limitada + constitución digital + costo mínimo
+      </div>
     </div>
   </div>
 
@@ -324,6 +174,23 @@
     <div class="guide-callout success">
       <strong>🎉 Para una SAS:</strong> El proceso es más simple. Se completa el <span class="term-link" data-term="Formulario de Constitución">formulario de constitución</span> en CreaEmpresa.gob.sv, se paga la matrícula (gratuita el primer año), y se obtiene la inscripción y se nombra al <a class="term-link" data-term="Representante Legal">representante legal</a>. Sin escritura pública, sin notario, sin depósito bancario.
     </div>
+
+    <!-- DIAGRAMA: Proceso de Registro -->
+    <div class="diagram-card">
+      <h3>🔄 Proceso de Registro Paso a Paso (Comerciante Individual ≥ $12,000)</h3>
+      <div class="flow-step"><div class="flow-num">1</div><div class="flow-content"><strong>Obtener NIT</strong> — DGII o portal en línea. $1.67, inmediato. El DUI ya funciona como NIT.</div></div>
+      <div class="flow-arrow">↓</div>
+      <div class="flow-step"><div class="flow-num">2</div><div class="flow-content"><strong>Inscribirse en IVA (NRC)</strong> — Ministerio de Hacienda. Gratis, mismo día. Obligatorio si activo &gt; $2,285.71.</div></div>
+      <div class="flow-arrow">↓</div>
+      <div class="flow-step"><div class="flow-num">3</div><div class="flow-content"><strong>Depositar Balance Inicial</strong> — CNR (Registro de Comercio). $17.14. Firmado por contador si activo ≥ $12,000.</div></div>
+      <div class="flow-arrow">↓</div>
+      <div class="flow-step"><div class="flow-num">4</div><div class="flow-content"><strong>Solicitar Matrícula de Comercio</strong> — CNR. ~$91.43 (varía según activo). 3-5 días hábiles.</div></div>
+      <div class="flow-arrow">↓</div>
+      <div class="flow-step"><div class="flow-num">5</div><div class="flow-content"><strong>Inscribirse en la Alcaldía</strong> — Presentar DUI, NIT, balance. Gratis en San Salvador. ~1 día.</div></div>
+      <div class="flow-arrow">↓</div>
+      <div class="flow-step"><div class="flow-num">6</div><div class="flow-content"><strong>Obtener Solvencia Estadística</strong> — solvencias.bcr.gob.sv. $5-$21. 1-8 horas en línea.</div></div>
+      <div style="text-align:center;margin-top:1rem;padding:.8rem;background:#d1fae5;border-radius:8px;font-weight:700;color:#065f46">✅ ¡Negocio formalizado! Tiempo total: ~5 días hábiles vía MiEmpresa.gob.sv</div>
+    </div>
   </div>
 
   <!-- SECCIÓN 3 -->
@@ -350,6 +217,63 @@
     <div class="guide-callout info">
       <strong>Valoración:</strong> A diferencia de otras legislaciones, la ley salvadoreña <strong>no exige avalúo por perito independiente</strong> para aportes en <span class="term-link" data-term="Capital en Especie">especie</span> o industria. El valor lo determinan los propios accionistas. Eso sí, los suscriptores del formulario son responsables civil, administrativa y penalmente por la veracidad de la información.
     </div>
+
+    <!-- DIAGRAMA: 7 Formas de Aportar Capital -->
+    <div class="diagram-card">
+      <h3>🎨 7 Formas de Aportar Capital a una SAS</h3>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:.8rem;margin-top:.5rem">
+        <div style="background:#eff6ff;padding:1rem;border-radius:8px;text-align:center;border:1px solid #bfdbfe">
+          <div style="font-size:1.5rem">💵</div><strong>Efectivo</strong><div style="font-size:.8rem;color:#64748b;margin-top:.3rem">Billetes y monedas</div>
+        </div>
+        <div style="background:#f0fdf4;padding:1rem;border-radius:8px;text-align:center;border:1px solid #bbf7d0">
+          <div style="font-size:1.5rem">🏦</div><strong>Transferencia bancaria</strong><div style="font-size:.8rem;color:#64748b;margin-top:.3rem">Desde cualquier banco</div>
+        </div>
+        <div style="background:#fdf4ff;padding:1rem;border-radius:8px;text-align:center;border:1px solid #f5d0fe">
+          <div style="font-size:1.5rem">📱</div><strong>Billeteras electrónicas</strong><div style="font-size:.8rem;color:#64748b;margin-top:.3rem">Chivo Wallet y otras</div>
+        </div>
+        <div style="background:#fff7ed;padding:1rem;border-radius:8px;text-align:center;border:1px solid #fed7aa">
+          <div style="font-size:1.5rem">💻</div><strong>Bienes muebles</strong><div style="font-size:.8rem;color:#64748b;margin-top:.3rem">Computadoras, equipo, vehículos</div>
+        </div>
+        <div style="background:#fef2f2;padding:1rem;border-radius:8px;text-align:center;border:1px solid #fecaca">
+          <div style="font-size:1.5rem">🏠</div><strong>Bienes inmuebles</strong><div style="font-size:.8rem;color:#64748b;margin-top:.3rem">Terrenos, locales</div>
+        </div>
+        <div style="background:#f5f3ff;padding:1rem;border-radius:8px;text-align:center;border:1px solid #ddd6fe">
+          <div style="font-size:1.5rem">💡</div><strong>Propiedad intelectual</strong><div style="font-size:.8rem;color:#64748b;margin-top:.3rem">Marcas, patentes, software</div>
+        </div>
+        <div style="background:#ecfdf5;padding:1rem;border-radius:8px;text-align:center;border:1px solid #a7f3d0">
+          <div style="font-size:1.5rem">🔧</div><strong>Trabajo (industria)</strong><div style="font-size:.8rem;color:#64748b;margin-top:.3rem">Conocimientos, servicios</div>
+        </div>
+      </div>
+      <div style="margin-top:1rem;text-align:center;font-size:.85rem;color:#64748b">
+        La lista es <strong>abierta</strong> (Art. 305-D dice "entre otros") — los accionistas definen libremente las reglas de pago
+      </div>
+    </div>
+
+    <!-- DIAGRAMA: Capital Suscrito vs Pagado -->
+    <div class="diagram-card">
+      <h3>💰 Capital Suscrito vs Capital Pagado: Línea de Tiempo</h3>
+      <div class="cap-timeline">
+        <div class="cap-event done">
+          <h4>📝 Día 0 — Constitución</h4>
+          <p>Se define el capital suscrito: $5,000 (100% comprometido). Se pagan $500 en efectivo. <br><strong>Suscrito: $5,000 | Pagado: $500</strong></p>
+        </div>
+        <div class="cap-event done">
+          <h4>📦 Mes 6 — Primer aporte adicional</h4>
+          <p>El negocio genera ingresos. El accionista aporta $1,500 más. <br><strong>Suscrito: $5,000 | Pagado: $2,000</strong></p>
+        </div>
+        <div class="cap-event done">
+          <h4>💻 Mes 12 — Aporte en especie</h4>
+          <p>Transfiere equipo de cómputo valorado en $1,000. <br><strong>Suscrito: $5,000 | Pagado: $3,000</strong></p>
+        </div>
+        <div class="cap-event">
+          <h4>⏰ Mes 24 — Fecha límite</h4>
+          <p>Debe pagar los $2,000 restantes. Si no paga: el capital se reduce a $3,000 (lo efectivamente pagado). Si lo pagado fuera &lt; $1, la SAS se disuelve.</p>
+        </div>
+      </div>
+      <div style="margin-top:.5rem;padding:.8rem;background:#fef3c7;border-radius:8px;font-size:.85rem;color:#92400e">
+        ⚠️ <strong>Regla clave:</strong> El 100% debe SUSCRIBIRSE al constituir, pero el PAGO puede diferirse hasta 2 años.
+      </div>
+    </div>
   </div>
 
   <!-- SECCIÓN 4 -->
@@ -368,8 +292,40 @@
       </div>
     </div>
 
+    <!-- DIAGRAMA: Ecuación Contable -->
+    <div class="diagram-card">
+      <h3>📐 La Ecuación Contable Fundamental</h3>
+      <div class="eq-wrap">
+        <div class="eq-box activo"><div class="label">Activo</div><div class="val" style="color:#3b82f6">$1,501</div><div style="font-size:.75rem;color:#64748b;margin-top:.3rem">Lo que TIENE<br>la empresa</div></div>
+        <div class="eq-sign">=</div>
+        <div class="eq-box pasivo"><div class="label">Pasivo</div><div class="val" style="color:#ec4899">$0</div><div style="font-size:.75rem;color:#64748b;margin-top:.3rem">Lo que DEBE<br>a terceros</div></div>
+        <div class="eq-sign">+</div>
+        <div class="eq-box patrimonio"><div class="label">Patrimonio</div><div class="val" style="color:#10b981">$1,501</div><div style="font-size:.75rem;color:#64748b;margin-top:.3rem">Lo que ES<br>de los dueños</div></div>
+      </div>
+      <div style="margin-top:1rem;background:#f8fafc;border-radius:8px;padding:1rem;font-size:.85rem">
+        <strong>Ejemplo real:</strong> SAS con $1 en efectivo + computadora $1,000 + mobiliario $500, sin deudas<br>
+        <div style="display:flex;gap:1rem;margin-top:.5rem;flex-wrap:wrap">
+          <div style="flex:1;min-width:200px;background:#dbeafe;padding:.5rem;border-radius:6px"><strong>Activo:</strong> Efectivo $1 + Equipo $1,000 + Mobiliario $500 = <strong>$1,501</strong></div>
+          <div style="flex:1;min-width:200px;background:#d1fae5;padding:.5rem;border-radius:6px"><strong>Patrimonio:</strong> Capital social = <strong>$1,501</strong> (1,501 acciones × $1)</div>
+        </div>
+        <div style="margin-top:.5rem;background:#fce7f3;padding:.5rem;border-radius:6px"><strong>Alternativa:</strong> Si los bienes entran como préstamo → Pasivo $1,500 + Patrimonio $1 = Activo $1,501</div>
+      </div>
+    </div>
+
     <div class="guide-callout warning">
       <strong>⚠️ Punto clave:</strong> Para todas las obligaciones registrales y fiscales en El Salvador — matrícula de comercio, contabilidad formal, auditoría externa — la variable determinante es el <strong>activo total</strong>, no el capital social. Una SAS con $1 de capital social puede tener $50,000 de activos.
+    </div>
+
+    <!-- DIAGRAMA: Umbrales -->
+    <div class="diagram-card">
+      <h3>📏 Umbrales de Activos y sus Obligaciones</h3>
+      <div class="threshold"><div class="amt">< $2,286</div><div class="obligations">Solo NIT + inscripción en alcaldía. Sin IVA, sin matrícula, sin contabilidad formal. <strong>Mínima carga regulatoria.</strong></div></div>
+      <div class="threshold"><div class="amt">$2,286 – $11,999</div><div class="obligations">NIT + NRC (IVA obligatorio) + Libros de IVA. Sin matrícula, sin contabilidad formal. Libro sencillo de ingresos/egresos.</div></div>
+      <div class="threshold"><div class="amt">$12,000 – $33,999</div><div class="obligations">Todo lo anterior + Matrícula de comercio + Contabilidad formal con contador autorizado + Balance firmado por contador + Solvencia estadística.</div></div>
+      <div class="threshold"><div class="amt">≥ $34,000</div><div class="obligations">Todo lo anterior + <strong>Auditor externo obligatorio</strong>. Balance certificado por auditor. Dictamen fiscal si activo &gt; $1,142,857.</div></div>
+      <div style="margin-top:1rem;padding:.8rem;background:#fef3c7;border-radius:8px;font-size:.85rem;color:#92400e">
+        ⚠️ <strong>Importante para SAS:</strong> Estos umbrales se basan en el <strong>activo total</strong> del balance, NO en el capital social. Una SAS con $1 de capital puede tener $50,000 en activos y caer en el umbral más alto. Además, toda SAS debe inscribirse en IVA obligatoriamente, sin importar el activo.
+      </div>
     </div>
 
     <h4>Capital Suscrito vs Capital Pagado</h4>
@@ -464,6 +420,40 @@
 
     <div class="guide-callout info">
       <strong>Total <span class="term-link" data-term="Cargas Patronales">cargas patronales</span>:</strong> 17.25% del salario (7.50% ISSS + 8.75% AFP + 1% INSAFORP). Para un empleado con <a class="term-link" data-term="Salario Mínimo">salario mínimo</a> de comercio (~$365/mes), esto equivale a <strong>~$63 mensuales adicionales</strong> por trabajador. El costo real del empleado sería ~$428/mes.
+    </div>
+
+    <!-- DIAGRAMA: Cargas Patronales -->
+    <div class="diagram-card">
+      <h3>👥 Cargas Patronales: Lo que Realmente Cuesta un Empleado</h3>
+      <div class="cargas-grid">
+        <div class="carga-item"><div class="pct" style="color:#dc2626">7.50%</div><div class="name">ISSS</div><div style="font-size:.7rem;color:#94a3b8;margin-top:.3rem">Tope: $75/mes</div></div>
+        <div class="carga-item"><div class="pct" style="color:#7c3aed">8.75%</div><div class="name">AFP</div><div style="font-size:.7rem;color:#94a3b8;margin-top:.3rem">Sin tope</div></div>
+        <div class="carga-item"><div class="pct" style="color:#ea580c">1.00%</div><div class="name">INSAFORP</div><div style="font-size:.7rem;color:#94a3b8;margin-top:.3rem">≥ 5 empleados</div></div>
+      </div>
+      <div class="carga-total">Total cargas patronales: 17.25% del salario</div>
+      <div style="margin-top:1rem">
+        <div style="font-size:.9rem;font-weight:600;margin-bottom:.5rem">Ejemplo: Empleado con salario mínimo comercio ($365/mes)</div>
+        <div class="bar-group">
+          <div class="bar-label"><span>Salario base</span><span>$365.00</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:0;background:#3b82f6" data-width="85%">$365</div></div>
+        </div>
+        <div class="bar-group">
+          <div class="bar-label"><span>+ ISSS patronal (7.50%)</span><span>$27.38</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:0;background:#dc2626" data-width="6.4%">$27</div></div>
+        </div>
+        <div class="bar-group">
+          <div class="bar-label"><span>+ AFP patronal (8.75%)</span><span>$31.94</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:0;background:#7c3aed" data-width="7.4%">$32</div></div>
+        </div>
+        <div class="bar-group">
+          <div class="bar-label"><span>+ INSAFORP (1%)</span><span>$3.65</span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:0;background:#ea580c" data-width="0.9%">$4</div></div>
+        </div>
+        <div class="bar-group">
+          <div class="bar-label"><span><strong>= Costo real del empleado</strong></span><span><strong>$427.97</strong></span></div>
+          <div class="bar-track"><div class="bar-fill" style="width:0;background:#10b981" data-width="100%"><strong>$427.97</strong></div></div>
+        </div>
+      </div>
     </div>
   </div>
 
