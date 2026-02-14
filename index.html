@@ -25,14 +25,22 @@
   <input type="text" id="search" placeholder="Buscar término, concepto o palabra clave...">
 </div>
 
+<!-- FONT SIZE CONTROLS -->
+<div style="display:flex;justify-content:flex-end;padding:0 1rem;gap:.5rem;align-items:center">
+  <span style="font-size:.75rem;color:var(--text-lighter)">Texto:</span>
+  <button onclick="adjustFontSize(-1)" style="width:32px;height:32px;border-radius:8px;border:1px solid var(--border);background:var(--card-bg);cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center" title="Reducir texto">A-</button>
+  <button onclick="adjustFontSize(0)" style="width:32px;height:32px;border-radius:8px;border:1px solid var(--border);background:var(--card-bg);cursor:pointer;font-size:.85rem;display:flex;align-items:center;justify-content:center" title="Tamaño original">A</button>
+  <button onclick="adjustFontSize(1)" style="width:32px;height:32px;border-radius:8px;border:1px solid var(--border);background:var(--card-bg);cursor:pointer;font-size:1rem;display:flex;align-items:center;justify-content:center" title="Aumentar texto">A+</button>
+</div>
+
 <!-- NAVIGATION -->
 <div class="nav-tabs">
-  <div class="nav-tab active" data-view="view-glossary">📖 Glosario</div>
-  <div class="nav-tab" data-view="view-guide">📄 Guía</div>
+  <div class="nav-tab" data-view="view-glossary">📖 Glosario</div>
+  <div class="nav-tab active" data-view="view-guide">📄 Guía</div>
 </div>
 
 <!-- VIEW: GLOSSARY -->
-<div id="view-glossary" class="view active">
+<div id="view-glossary" class="view">
   <div class="container">
     <div id="tabs" class="tabs"></div>
     <div id="glossary"></div>
@@ -40,7 +48,7 @@
 </div>
 
 <!-- VIEW: GUIDE -->
-<div id="view-guide" class="view">
+<div id="view-guide" class="view active">
   <div class="guide-container" id="guide-container">
 <div class="guide">
 
